@@ -2,13 +2,13 @@
 title: 'project-1'
 format: html
 listing:
-  - id: meeting-notes
-    contents: "meeting-notes/*.qmd"
+  - id: meetings
+    contents: "../../meetings/*.qmd"
     type: table
     fields: [date, title, attendees]
     filter-ui: [title, date, attendees]
-  - id: reading-notes
-    contents: "../../reading-notes/*.qmd"
+  - id: coursework
+    contents: "../../coursework/*.qmd"
     type: table
     fields: [year, title, author]
     include:
@@ -40,14 +40,19 @@ listing:
 :::
 
 
-## Reading notes
+## Coursework notes
 
-:::{#reading-notes}
+:::{#coursework}
+:::
+
+## Teaching notes
+
+:::{#teaching}
 :::
 
 ## Meeting notes
 
-:::{#meeting-notes}
+:::{#meetings}
 :::
 
 ## Weeks in which I worked on this project

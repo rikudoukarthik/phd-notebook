@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Meetings – My lab notebook</title>
+<title>Coursework – My lab notebook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +23,26 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-b241fbb7a02b0ecdd77210d8cffa83e2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-b241fbb7a02b0ecdd77210d8cffa83e2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/videojs/video.min.js"></script>
+<link href="../site_libs/quarto-contrib/videojs/video-js.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -78,9 +80,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-date','listing-projects',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-title','listing-author','listing-year','listing-projects','listing-keywords',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
-      searchColumns: ["listing-title","listing-date","listing-projects"],
+      searchColumns: ["listing-title","listing-author","listing-year","listing-projects","listing-keywords"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -128,7 +130,7 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -138,7 +140,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">My lab notebook</span>
     </a>
   </div>
@@ -149,19 +151,19 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./weekly-notes/index.html"> 
+    <a class="nav-link" href="../weekly-notes/index.html"> 
 <span class="menu-text">Weekly notes</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./coursework/index.html"> 
+    <a class="nav-link active" href="../coursework/index.html" aria-current="page"> 
 <span class="menu-text">Coursework</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./teaching/index.html"> 
+    <a class="nav-link" href="../teaching/index.html"> 
 <span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./meetings.html" aria-current="page"> 
+    <a class="nav-link" href="../meetings.html"> 
 <span class="menu-text">Meetings</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -170,11 +172,11 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-projects">    
         <li>
-    <a class="dropdown-item" href="./projects/how-to.html">
+    <a class="dropdown-item" href="../projects/how-to.html">
  <span class="dropdown-text">How to create new projects</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./projects/project-1/index.html">
+    <a class="dropdown-item" href="../projects/project-1/index.html">
  <span class="dropdown-text">project-1</span></a>
   </li>  
     </ul>
@@ -198,7 +200,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Meetings</h1>
+<h1 class="title">Coursework</h1>
 </div>
 
 
@@ -215,7 +217,24 @@ window.Quarto = {
 </header>
 
 
-<p>New meeting note files can be made with <code>quartoutils::make_meeting_notes()</code>. These files are saved into the <code>weekly-notes</code> subdirectory; or alternatively, they can be stored into a project subdirectory by passing the argument <code>project = ...</code> to the function. Meetings associated with specific project tags are listed under the corresponding project landing pages, or can be viewed directly from the Meeting Notes landing page.</p>
+<p>The function <code>quartoutils::make_reading_notes()</code> makes it easy to create and edit a file to jot down reading notes.<br>
+Specifically, this function creates a new file in the <code>coursework</code> subdirectory of the root, using the file name provided through an argument. If such a file already exists, this function quits with an error. The file also automatically gets added to a table of all such files, which is accessible from the “Reading Notes” landing page of the website. This file is also added to the “reading notes” section of each project landing page; this functionality is demonstrated in the video below.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Video instructions to create reading notes
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="../media/coursework-video.mp4"></video></div>
+</div>
+</div>
+</div>
 
 
 
@@ -227,14 +246,11 @@ window.Quarto = {
      <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
        <option value="" disabled="" selected="" hidden="">Order By</option>
        <option value="index" data-direction="asc">Default</option>
-         <option value="listing-date-sort" data-direction="asc">
-          Date - Oldest
-        </option>
-         <option value="listing-date-sort" data-direction="desc">
-          Date - Newest
-        </option>
          <option value="listing-title-sort" data-direction="asc">
           Title
+        </option>
+         <option value="listing-author" data-direction="asc">
+          Author
         </option>
      </select>
   </div>
@@ -250,34 +266,35 @@ window.Quarto = {
 <a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
 </th>
 <th>
-<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
+<a class="sort" data-sort="listing-author" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Author</a>
+</th>
+<th>
+year
 </th>
 <th>
 projects
 </th>
+<th>
+keywords
+</th>
 </tr>
 </thead>
 <tbody class="list">
-<tr data-index="0" data-listing-date-sort="1741669200000" data-listing-file-modified-sort="1741731933028" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="21" data-listing-title-sort="Meeting Title" data-listing-filename-sort="meeting1.qmd">
+<tr data-index="0" data-listing-file-modified-sort="1741731933029" data-listing-reading-time-sort="1" data-listing-word-count-sort="4" data-listing-title-sort="Demo paper title" data-listing-filename-sort="demopaper1.qmd">
 <td>
-<a href="./projects/project-1/meeting-notes/meeting1.html" class="title listing-title">Meeting Title</a>
+<a href="../coursework/demopaper1.html" class="title listing-title">Demo paper title</a>
 </td>
 <td>
-<span class="listing-date">Mar 11, 2025</span>
+<span class="listing-author">Demo Author</span>
+</td>
+<td>
+<span class="listing-year">2020</span>
 </td>
 <td>
 <span class="listing-projects">project-1</span>
 </td>
-</tr>
-<tr data-index="1" data-listing-date-sort="1741413600000" data-listing-file-modified-sort="1741735287707" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="21" data-listing-title-sort="Meeting Title in /meetings" data-listing-filename-sort="meeting-1.qmd">
 <td>
-<a href="./meetings/meeting-1.html" class="title listing-title">Meeting Title in /meetings</a>
-</td>
-<td>
-<span class="listing-date">Mar 8, 2025</span>
-</td>
-<td>
-<span class="listing-projects">&nbsp;</span>
+<span class="listing-keywords">&nbsp;</span>
 </td>
 </tr>
 </tbody>
@@ -704,6 +721,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<script>videojs(video_shortcode_videojs_video1);</script>
 
 
 

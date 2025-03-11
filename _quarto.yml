@@ -9,7 +9,8 @@ website:
     search: true
     left:
       - weekly-notes/index.qmd
-      - reading-notes/index.qmd
+      - coursework/index.qmd
+      - teaching/index.qmd
       - meetings.qmd
       - text: "Projects"
         menu: 

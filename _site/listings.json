@@ -1,22 +1,28 @@
 [
   {
-    "listing": "/meetings.html",
+    "listing": "/teaching/index.html",
     "items": [
-      "/projects/project-1/meeting-notes/meeting1.html",
-      "/meeting-notes/meeting-1.html"
+      "/teaching/demopaper1.html"
     ]
   },
   {
-    "listing": "/reading-notes/index.html",
+    "listing": "/meetings.html",
     "items": [
-      "/reading-notes/demopaper1.html"
+      "/projects/project-1/meeting-notes/meeting1.html",
+      "/meetings/meeting-1.html"
+    ]
+  },
+  {
+    "listing": "/coursework/index.html",
+    "items": [
+      "/coursework/demopaper1.html"
     ]
   },
   {
     "listing": "/projects/project-1/index.html",
     "items": [
-      "/projects/project-1/meeting-notes/meeting1.html",
-      "/reading-notes/demopaper1.html",
+      "/meetings/meeting-1.html",
+      "/coursework/demopaper1.html",
       "/projects/project-1/idea-note1.html",
       "/weekly-notes/week-of-2025-03-03.html"
     ]

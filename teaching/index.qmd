@@ -1,5 +1,5 @@
 ---
-title: "Reading notes"
+title: "Teaching"
 format: html
 listing:
   contents:
@@ -10,7 +10,7 @@ listing:
 ---
 
 The function `quartoutils::make_reading_notes()` makes it easy to create and edit a file to jot down reading notes.  
-Specifically, this function creates a new file in the `reading-notes` subdirectory of the root, using the file name provided through an argument. 
+Specifically, this function creates a new file in the `coursework` subdirectory of the root, using the file name provided through an argument. 
 If such a file already exists, this function quits with an error. 
 The file also automatically gets added to a table of all such files, which is accessible from the "Reading Notes" landing page of the website.
 This file is also added to the "reading notes" section of each project landing page; this functionality is demonstrated in the video below. 
@@ -19,6 +19,6 @@ This file is also added to the "reading notes" section of each project landing p
 
 ### Video instructions to create reading notes
 
-{{< video ../media/reading-notes-video.mp4 >}}
+{{< video ../media/coursework-video.mp4 >}}
 
 :::
