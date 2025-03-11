@@ -39,28 +39,28 @@
     "href": "teaching/index.html",
     "title": "Teaching",
     "section": "",
-    "text": "The function quartoutils::make_reading_notes() makes it easy to create and edit a file to jot down reading notes.\nSpecifically, this function creates a new file in the coursework subdirectory of the root, using the file name provided through an argument. If such a file already exists, this function quits with an error. The file also automatically gets added to a table of all such files, which is accessible from the “Reading Notes” landing page of the website. This file is also added to the “reading notes” section of each project landing page; this functionality is demonstrated in the video below.\n\n\n\n\n\n\nVideo instructions to create reading notes\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nTitle\n\n\nAuthor\n\n\nyear\n\n\nprojects\n\n\nkeywords\n\n\n\n\n\n\nDemo paper title\n\n\nDemo Author\n\n\n2020\n\n\nproject-1\n\n\n \n\n\n\n\n\nNo matching items"
+    "text": "The function quartoutils::make_reading_notes() makes it easy to create and edit a file to jot down reading notes.\nSpecifically, this function creates a new file in the coursework subdirectory of the root, using the file name provided through an argument. If such a file already exists, this function quits with an error. The file also automatically gets added to a table of all such files, which is accessible from the “Reading Notes” landing page of the website. This file is also added to the “reading notes” section of each project landing page; this functionality is demonstrated in the video below.\n\n\n\n\n\n\nVideo instructions to create reading notes\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nTitle\n\n\nAuthor\n\n\nyear\n\n\nprojects\n\n\nkeywords\n\n\n\n\n\n\n2025 Spring BIOL 1208\n\n\n \n\n\n \n\n\nbiol1208\n\n\n \n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "projects/project-1/meeting-notes/meeting1.html",
     "href": "projects/project-1/meeting-notes/meeting1.html",
     "title": "Meeting Title",
     "section": "",
-    "text": "Etiam quis tortor luctus, pellentesque ante a, finibus dolor. Phasellus in nibh et magna pulvinar malesuada. Ut nisl ex, sagittis at sollicitudin et, sollicitudin id nunc. In id porta urna. Proin porta dolor dolor, vel dapibus nisi lacinia in. Pellentesque ante mauris, ornare non euismod a, fermentum ut sapien. Proin sed vehicula enim. Aliquam tortor odio, vestibulum vitae odio in, tempor molestie justo. Praesent maximus lacus nec leo maximus blandit."
+    "text": "Nullam dapibus cursus dolor sit amet consequat. Nulla facilisi. Curabitur vel nulla non magna lacinia tincidunt. Duis porttitor quam leo, et blandit velit efficitur ut. Etiam auctor tincidunt porttitor. Phasellus sed accumsan mi. Fusce ut erat dui. Suspendisse eu augue eget turpis condimentum finibus eu non lorem. Donec finibus eros eu ante condimentum, sed pharetra sapien sagittis. Phasellus non dolor ac ante mollis auctor nec et sapien. Pellentesque vulputate at nisi eu tincidunt. Vestibulum at dolor aliquam, hendrerit purus eu, eleifend massa. Morbi consectetur eros id tincidunt gravida. Fusce ut enim quis orci hendrerit lacinia sed vitae enim."
   },
   {
     "objectID": "projects/project-1/meeting-notes/meeting1.html#meeting-goals",
     "href": "projects/project-1/meeting-notes/meeting1.html#meeting-goals",
     "title": "Meeting Title",
     "section": "",
-    "text": "Etiam quis tortor luctus, pellentesque ante a, finibus dolor. Phasellus in nibh et magna pulvinar malesuada. Ut nisl ex, sagittis at sollicitudin et, sollicitudin id nunc. In id porta urna. Proin porta dolor dolor, vel dapibus nisi lacinia in. Pellentesque ante mauris, ornare non euismod a, fermentum ut sapien. Proin sed vehicula enim. Aliquam tortor odio, vestibulum vitae odio in, tempor molestie justo. Praesent maximus lacus nec leo maximus blandit."
+    "text": "Nullam dapibus cursus dolor sit amet consequat. Nulla facilisi. Curabitur vel nulla non magna lacinia tincidunt. Duis porttitor quam leo, et blandit velit efficitur ut. Etiam auctor tincidunt porttitor. Phasellus sed accumsan mi. Fusce ut erat dui. Suspendisse eu augue eget turpis condimentum finibus eu non lorem. Donec finibus eros eu ante condimentum, sed pharetra sapien sagittis. Phasellus non dolor ac ante mollis auctor nec et sapien. Pellentesque vulputate at nisi eu tincidunt. Vestibulum at dolor aliquam, hendrerit purus eu, eleifend massa. Morbi consectetur eros id tincidunt gravida. Fusce ut enim quis orci hendrerit lacinia sed vitae enim."
   },
   {
     "objectID": "projects/project-1/meeting-notes/meeting1.html#things-to-think-about",
     "href": "projects/project-1/meeting-notes/meeting1.html#things-to-think-about",
     "title": "Meeting Title",
     "section": "Things to think about",
-    "text": "Things to think about\nDuis ornare ex ac iaculis pretium. Maecenas sagittis odio id erat pharetra, sit amet consectetur quam sollicitudin. Vivamus pharetra quam purus, nec sagittis risus pretium at. Nullam feugiat, turpis ac accumsan interdum, sem tellus blandit neque, id vulputate diam quam semper nisl. Donec sit amet enim at neque porttitor aliquet. Phasellus facilisis nulla eget placerat eleifend. Vestibulum non egestas eros, eget lobortis ipsum. Nulla rutrum massa eget enim aliquam, id porttitor erat luctus. Nunc sagittis quis eros eu sagittis. Pellentesque dictum, erat at pellentesque sollicitudin, justo augue pulvinar metus, quis rutrum est mi nec felis. Vestibulum efficitur mi lorem, at elementum purus tincidunt a. Aliquam finibus enim magna, vitae pellentesque erat faucibus at. Nulla mauris tellus, imperdiet id lobortis et, dignissim condimentum ipsum. Morbi nulla orci, varius at aliquet sed, facilisis id tortor. Donec ut urna nisi."
+    "text": "Things to think about\nUt ut condimentum augue, nec eleifend nisl. Sed facilisis egestas odio ac pretium. Pellentesque consequat magna sed venenatis sagittis. Vivamus feugiat lobortis magna vitae accumsan. Pellentesque euismod malesuada hendrerit. Ut non mauris non arcu condimentum sodales vitae vitae dolor. Nullam dapibus, velit eget lacinia rutrum, ipsum justo malesuada odio, et lobortis sapien magna vel lacus. Nulla purus neque, hendrerit non malesuada eget, mattis vel erat. Suspendisse potenti."
   },
   {
     "objectID": "projects/project-1/meeting-notes/meeting1.html#action-items",
@@ -74,14 +74,14 @@
     "href": "projects/project-1/idea-note1.html",
     "title": "Idea note 1",
     "section": "",
-    "text": "Duis ornare ex ac iaculis pretium. Maecenas sagittis odio id erat pharetra, sit amet consectetur quam sollicitudin. Vivamus pharetra quam purus, nec sagittis risus pretium at. Nullam feugiat, turpis ac accumsan interdum, sem tellus blandit neque, id vulputate diam quam semper nisl. Donec sit amet enim at neque porttitor aliquet. Phasellus facilisis nulla eget placerat eleifend. Vestibulum non egestas eros, eget lobortis ipsum. Nulla rutrum massa eget enim aliquam, id porttitor erat luctus. Nunc sagittis quis eros eu sagittis. Pellentesque dictum, erat at pellentesque sollicitudin, justo augue pulvinar metus, quis rutrum est mi nec felis. Vestibulum efficitur mi lorem, at elementum purus tincidunt a. Aliquam finibus enim magna, vitae pellentesque erat faucibus at. Nulla mauris tellus, imperdiet id lobortis et, dignissim condimentum ipsum. Morbi nulla orci, varius at aliquet sed, facilisis id tortor. Donec ut urna nisi."
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sagittis posuere ligula sit amet lacinia. Duis dignissim pellentesque magna, rhoncus congue sapien finibus mollis. Ut eu sem laoreet, vehicula ipsum in, convallis erat. Vestibulum magna sem, blandit pulvinar augue sit amet, auctor malesuada sapien. Nullam faucibus leo eget eros hendrerit, non laoreet ipsum lacinia. Curabitur cursus diam elit, non tempus ante volutpat a. Quisque hendrerit blandit purus non fringilla. Integer sit amet elit viverra ante dapibus semper. Vestibulum viverra rutrum enim, at luctus enim posuere eu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
   },
   {
     "objectID": "projects/project-1/idea-note1.html#thoughts-about-project",
     "href": "projects/project-1/idea-note1.html#thoughts-about-project",
     "title": "Idea note 1",
     "section": "",
-    "text": "Duis ornare ex ac iaculis pretium. Maecenas sagittis odio id erat pharetra, sit amet consectetur quam sollicitudin. Vivamus pharetra quam purus, nec sagittis risus pretium at. Nullam feugiat, turpis ac accumsan interdum, sem tellus blandit neque, id vulputate diam quam semper nisl. Donec sit amet enim at neque porttitor aliquet. Phasellus facilisis nulla eget placerat eleifend. Vestibulum non egestas eros, eget lobortis ipsum. Nulla rutrum massa eget enim aliquam, id porttitor erat luctus. Nunc sagittis quis eros eu sagittis. Pellentesque dictum, erat at pellentesque sollicitudin, justo augue pulvinar metus, quis rutrum est mi nec felis. Vestibulum efficitur mi lorem, at elementum purus tincidunt a. Aliquam finibus enim magna, vitae pellentesque erat faucibus at. Nulla mauris tellus, imperdiet id lobortis et, dignissim condimentum ipsum. Morbi nulla orci, varius at aliquet sed, facilisis id tortor. Donec ut urna nisi."
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sagittis posuere ligula sit amet lacinia. Duis dignissim pellentesque magna, rhoncus congue sapien finibus mollis. Ut eu sem laoreet, vehicula ipsum in, convallis erat. Vestibulum magna sem, blandit pulvinar augue sit amet, auctor malesuada sapien. Nullam faucibus leo eget eros hendrerit, non laoreet ipsum lacinia. Curabitur cursus diam elit, non tempus ante volutpat a. Quisque hendrerit blandit purus non fringilla. Integer sit amet elit viverra ante dapibus semper. Vestibulum viverra rutrum enim, at luctus enim posuere eu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
   },
   {
     "objectID": "meetings.html",
@@ -130,7 +130,7 @@
     "href": "coursework/demopaper1.html",
     "title": "Demo paper title",
     "section": "",
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sagittis posuere ligula sit amet lacinia. Duis dignissim pellentesque magna, rhoncus congue sapien finibus mollis. Ut eu sem laoreet, vehicula ipsum in, convallis erat. Vestibulum magna sem, blandit pulvinar augue sit amet, auctor malesuada sapien. Nullam faucibus leo eget eros hendrerit, non laoreet ipsum lacinia. Curabitur cursus diam elit, non tempus ante volutpat a. Quisque hendrerit blandit purus non fringilla. Integer sit amet elit viverra ante dapibus semper. Vestibulum viverra rutrum enim, at luctus enim posuere eu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+    "text": "Etiam maximus accumsan gravida. Maecenas at nunc dignissim, euismod enim ac, bibendum ipsum. Maecenas vehicula velit in nisl aliquet ultricies. Nam eget massa interdum, maximus arcu vel, pretium erat. Maecenas sit amet tempor purus, vitae aliquet nunc. Vivamus cursus urna velit, eleifend dictum magna laoreet ut. Duis eu erat mollis, blandit magna id, tincidunt ipsum. Integer massa nibh, commodo eu ex vel, venenatis efficitur ligula. Integer convallis lacus elit, maximus eleifend lacus ornare ac. Vestibulum scelerisque viverra urna id lacinia. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean eget enim at diam bibendum tincidunt eu non purus. Nullam id magna ultrices, sodales metus viverra, tempus turpis."
   },
   {
     "objectID": "coursework/index.html",
@@ -144,21 +144,21 @@
     "href": "meetings/meeting-1.html",
     "title": "Meeting Title in /meetings",
     "section": "",
-    "text": "Nunc ac dignissim magna. Vestibulum vitae egestas elit. Proin feugiat leo quis ante condimentum, eu ornare mauris feugiat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris cursus laoreet ex, dignissim bibendum est posuere iaculis. Suspendisse et maximus elit. In fringilla gravida ornare. Aenean id lectus pulvinar, sagittis felis nec, rutrum risus. Nam vel neque eu arcu blandit fringilla et in quam. Aliquam luctus est sit amet vestibulum eleifend. Phasellus elementum sagittis molestie. Proin tempor lorem arcu, at condimentum purus volutpat eu. Fusce et pellentesque ligula. Pellentesque id tellus at erat luctus fringilla. Suspendisse potenti."
+    "text": "Etiam congue quam eget velit convallis, eu sagittis orci vestibulum. Vestibulum at massa turpis. Curabitur ornare ex sed purus vulputate, vitae porta augue rhoncus. Phasellus auctor suscipit purus, vel ultricies nunc. Nunc eleifend nulla ac purus volutpat, id fringilla felis aliquet. Duis vitae porttitor nibh, in rhoncus risus. Vestibulum a est vitae est tristique vehicula. Proin mollis justo id est tempus hendrerit. Praesent suscipit placerat congue. Aliquam eu elit gravida, consequat augue non, ultricies sapien. Nunc ultricies viverra ante, sit amet vehicula ante volutpat id. Etiam tempus purus vitae tellus mollis viverra. Donec at ornare mauris. Aliquam sodales hendrerit ornare. Suspendisse accumsan lacinia sapien, sit amet imperdiet dui molestie ut."
   },
   {
     "objectID": "meetings/meeting-1.html#meeting-goals",
     "href": "meetings/meeting-1.html#meeting-goals",
     "title": "Meeting Title in /meetings",
     "section": "",
-    "text": "Nunc ac dignissim magna. Vestibulum vitae egestas elit. Proin feugiat leo quis ante condimentum, eu ornare mauris feugiat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris cursus laoreet ex, dignissim bibendum est posuere iaculis. Suspendisse et maximus elit. In fringilla gravida ornare. Aenean id lectus pulvinar, sagittis felis nec, rutrum risus. Nam vel neque eu arcu blandit fringilla et in quam. Aliquam luctus est sit amet vestibulum eleifend. Phasellus elementum sagittis molestie. Proin tempor lorem arcu, at condimentum purus volutpat eu. Fusce et pellentesque ligula. Pellentesque id tellus at erat luctus fringilla. Suspendisse potenti."
+    "text": "Etiam congue quam eget velit convallis, eu sagittis orci vestibulum. Vestibulum at massa turpis. Curabitur ornare ex sed purus vulputate, vitae porta augue rhoncus. Phasellus auctor suscipit purus, vel ultricies nunc. Nunc eleifend nulla ac purus volutpat, id fringilla felis aliquet. Duis vitae porttitor nibh, in rhoncus risus. Vestibulum a est vitae est tristique vehicula. Proin mollis justo id est tempus hendrerit. Praesent suscipit placerat congue. Aliquam eu elit gravida, consequat augue non, ultricies sapien. Nunc ultricies viverra ante, sit amet vehicula ante volutpat id. Etiam tempus purus vitae tellus mollis viverra. Donec at ornare mauris. Aliquam sodales hendrerit ornare. Suspendisse accumsan lacinia sapien, sit amet imperdiet dui molestie ut."
   },
   {
     "objectID": "meetings/meeting-1.html#things-to-think-about",
     "href": "meetings/meeting-1.html#things-to-think-about",
     "title": "Meeting Title in /meetings",
     "section": "Things to think about",
-    "text": "Things to think about\nNulla eget cursus ipsum. Vivamus porttitor leo diam, sed volutpat lectus facilisis sit amet. Maecenas et pulvinar metus. Ut at dignissim tellus. In in tincidunt elit. Etiam vulputate lobortis arcu, vel faucibus leo lobortis ac. Aliquam erat volutpat. In interdum orci ac est euismod euismod. Nunc eleifend tristique risus, at lacinia odio commodo in. Sed aliquet ligula odio, sed tempor neque ultricies sit amet."
+    "text": "Things to think about\nAenean placerat luctus tortor vitae molestie. Nulla at aliquet nulla. Sed efficitur tellus orci, sed fringilla lectus laoreet eget. Vivamus maximus quam sit amet arcu dignissim, sed accumsan massa ullamcorper. Sed iaculis tincidunt feugiat. Nulla in est at nunc ultricies dictum ut vitae nunc. Aenean convallis vel diam at malesuada. Suspendisse arcu libero, vehicula tempus ultrices a, placerat sit amet tortor. Sed dictum id nulla commodo mattis. Aliquam mollis, nunc eu tristique faucibus, purus lacus tincidunt nulla, ac pretium lorem nunc ut enim. Curabitur eget mattis nisl, vitae sodales augue. Nam felis massa, bibendum sit amet nulla vel, vulputate rutrum lacus. Aenean convallis odio pharetra nulla mattis consequat."
   },
   {
     "objectID": "meetings/meeting-1.html#action-items",
@@ -179,14 +179,14 @@
     "href": "projects/project-1/index.html",
     "title": "project-1",
     "section": "",
-    "text": "Duis ornare ex ac iaculis pretium. Maecenas sagittis odio id erat pharetra, sit amet consectetur quam sollicitudin. Vivamus pharetra quam purus, nec sagittis risus pretium at. Nullam feugiat, turpis ac accumsan interdum, sem tellus blandit neque, id vulputate diam quam semper nisl. Donec sit amet enim at neque porttitor aliquet. Phasellus facilisis nulla eget placerat eleifend. Vestibulum non egestas eros, eget lobortis ipsum. Nulla rutrum massa eget enim aliquam, id porttitor erat luctus. Nunc sagittis quis eros eu sagittis. Pellentesque dictum, erat at pellentesque sollicitudin, justo augue pulvinar metus, quis rutrum est mi nec felis. Vestibulum efficitur mi lorem, at elementum purus tincidunt a. Aliquam finibus enim magna, vitae pellentesque erat faucibus at. Nulla mauris tellus, imperdiet id lobortis et, dignissim condimentum ipsum. Morbi nulla orci, varius at aliquet sed, facilisis id tortor. Donec ut urna nisi."
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sagittis posuere ligula sit amet lacinia. Duis dignissim pellentesque magna, rhoncus congue sapien finibus mollis. Ut eu sem laoreet, vehicula ipsum in, convallis erat. Vestibulum magna sem, blandit pulvinar augue sit amet, auctor malesuada sapien. Nullam faucibus leo eget eros hendrerit, non laoreet ipsum lacinia. Curabitur cursus diam elit, non tempus ante volutpat a. Quisque hendrerit blandit purus non fringilla. Integer sit amet elit viverra ante dapibus semper. Vestibulum viverra rutrum enim, at luctus enim posuere eu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
   },
   {
     "objectID": "projects/project-1/index.html#about-this-project",
     "href": "projects/project-1/index.html#about-this-project",
     "title": "project-1",
     "section": "",
-    "text": "Duis ornare ex ac iaculis pretium. Maecenas sagittis odio id erat pharetra, sit amet consectetur quam sollicitudin. Vivamus pharetra quam purus, nec sagittis risus pretium at. Nullam feugiat, turpis ac accumsan interdum, sem tellus blandit neque, id vulputate diam quam semper nisl. Donec sit amet enim at neque porttitor aliquet. Phasellus facilisis nulla eget placerat eleifend. Vestibulum non egestas eros, eget lobortis ipsum. Nulla rutrum massa eget enim aliquam, id porttitor erat luctus. Nunc sagittis quis eros eu sagittis. Pellentesque dictum, erat at pellentesque sollicitudin, justo augue pulvinar metus, quis rutrum est mi nec felis. Vestibulum efficitur mi lorem, at elementum purus tincidunt a. Aliquam finibus enim magna, vitae pellentesque erat faucibus at. Nulla mauris tellus, imperdiet id lobortis et, dignissim condimentum ipsum. Morbi nulla orci, varius at aliquet sed, facilisis id tortor. Donec ut urna nisi."
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sagittis posuere ligula sit amet lacinia. Duis dignissim pellentesque magna, rhoncus congue sapien finibus mollis. Ut eu sem laoreet, vehicula ipsum in, convallis erat. Vestibulum magna sem, blandit pulvinar augue sit amet, auctor malesuada sapien. Nullam faucibus leo eget eros hendrerit, non laoreet ipsum lacinia. Curabitur cursus diam elit, non tempus ante volutpat a. Quisque hendrerit blandit purus non fringilla. Integer sit amet elit viverra ante dapibus semper. Vestibulum viverra rutrum enim, at luctus enim posuere eu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
   },
   {
     "objectID": "projects/project-1/index.html#concept-notes-and-other-ideas",
@@ -224,11 +224,53 @@
     "text": "Weeks in which I worked on this project\n\n\n\n\n\nTitle\n\n\nprojects\n\n\nkeywords\n\n\n\n\n\n\nWeek of 2025-03-03\n\n\nproject-1, project-2\n\n\n \n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "teaching/demopaper1.html",
-    "href": "teaching/demopaper1.html",
-    "title": "Demo paper title",
+    "objectID": "teaching/2025_01_spring.html",
+    "href": "teaching/2025_01_spring.html",
+    "title": "2025 Spring BIOL 1208",
     "section": "",
-    "text": "Aenean placerat luctus tortor vitae molestie. Nulla at aliquet nulla. Sed efficitur tellus orci, sed fringilla lectus laoreet eget. Vivamus maximus quam sit amet arcu dignissim, sed accumsan massa ullamcorper. Sed iaculis tincidunt feugiat. Nulla in est at nunc ultricies dictum ut vitae nunc. Aenean convallis vel diam at malesuada. Suspendisse arcu libero, vehicula tempus ultrices a, placerat sit amet tortor. Sed dictum id nulla commodo mattis. Aliquam mollis, nunc eu tristique faucibus, purus lacus tincidunt nulla, ac pretium lorem nunc ut enim. Curabitur eget mattis nisl, vitae sodales augue. Nam felis massa, bibendum sit amet nulla vel, vulputate rutrum lacus. Aenean convallis odio pharetra nulla mattis consequat."
+    "text": "I missed this prep meeting because of my Internationl Student Orientation"
+  },
+  {
+    "objectID": "teaching/2025_01_spring.html#section",
+    "href": "teaching/2025_01_spring.html#section",
+    "title": "2025 Spring BIOL 1208",
+    "section": "",
+    "text": "I missed this prep meeting because of my Internationl Student Orientation"
+  },
+  {
+    "objectID": "teaching/2025_01_spring.html#section-1",
+    "href": "teaching/2025_01_spring.html#section-1",
+    "title": "2025 Spring BIOL 1208",
+    "section": "2025-01-17",
+    "text": "2025-01-17\n\nSchool closure possible next week due to winter storm predictions\n\nInform students of due dates in pre-week email: Syllabus and Safety quiz still due by 27th even if school closes, while other ICA will be pushed (all classes and schedule in general will be pushed forward by 1 week)\n\nFor pre-lab quizzes, which TAs cannot open and view, if anyone emails saying they missed the deadline, forward the request to Dr B because she can heck if they’re lying (we can see their activity log on Moodle)\nDo not share grades with anyone except the student. In exceptional cases, forward to Dr B and mention that Student Advisory board can provide an authorization form.\nIn Scientific Methods only, they can use AI for the ICAs. Ensure they are aware that they cannot use AI in any of the other assignments.\n\nThey need to: choose a topic (from the list provided), give a prompt to create a biological case study in __ field; rest should all be done by themselves (coming up with questions, hypotheses, predictions, etc.\nThe AI demo video is available in the PPT only in the instructor version, but students can find it in “Lecture videos” on Moodle.\n\nEmphasise that even if we TAs go through in class and help students (even if suggest corrections), doesn’t guarantee 100% grade; tell them there’s a reason grading is done completely separately and not in class.\nTemplate for ICA is available on Moodle, which they can download and edit."
+  },
+  {
+    "objectID": "teaching/2025_01_spring.html#section-2",
+    "href": "teaching/2025_01_spring.html#section-2",
+    "title": "2025 Spring BIOL 1208",
+    "section": "2025-01-24",
+    "text": "2025-01-24\nGrading\n\nDon’t go via “Grade” button on first page; click the “View all submission” instead; then the “GradeMark” pencil button for each student to open Turnitin rubrics etc.\nIt is fine if total grade comes to &gt;100%, like with bonus points"
+  },
+  {
+    "objectID": "teaching/2025_01_spring.html#section-3",
+    "href": "teaching/2025_01_spring.html#section-3",
+    "title": "2025 Spring BIOL 1208",
+    "section": "2025-01-31",
+    "text": "2025-01-31\n\nGeaux Communicate (Becky Carmichael, Negar Basiri)\nFeedback and Culture: Audience and Language\n\nCommunicate with cultural competency\n\nWhen an instructor noticed an assignment of yours and responded on its qualities… Can’t remember a specific instance, but some important points:\n\nNot focusing on the grading so much as on the content and feedback on what can be improved\nEven if something is wrong, treating it respectfully and trying to compare and contextualise with what is right\nTreating uncertainties positively / admitting their own uncertainty\nConnection\n\nWhat are your current feedback strategies? - Using “should”, “must”, etc. sparingly - Giving positive feedback as well - Providing adequate reasoning for feedback\n\n“[NAME], please …”\n\nLet’s establish a common language: - Define key terms - Review rubric - Provide and discuss a Common Mistakes document - Annotate assignments to demonstrate feedback language - Share a respond-to-feedback template\nC-I Teaching Toolkit available\n\n\nPrep\n\nAfter Techniques review, go over lab forecast, emphasis on Partial Lab Report in all Enzymes classes—writing, DON’T COPY"
+  },
+  {
+    "objectID": "teaching/2025_01_spring.html#section-4",
+    "href": "teaching/2025_01_spring.html#section-4",
+    "title": "2025 Spring BIOL 1208",
+    "section": "2025-02-07",
+    "text": "2025-02-07\n…"
+  },
+  {
+    "objectID": "teaching/2025_01_spring.html#section-5",
+    "href": "teaching/2025_01_spring.html#section-5",
+    "title": "2025 Spring BIOL 1208",
+    "section": "2025-02-21",
+    "text": "2025-02-21\n\nTAs should leave SAA cases ungraded, Dr B will handle soon\nReview should go only for max 1 hour (inc. student presentations ideally 3—index cards/PPT and bar graph by hand on board)\nMid-term should start 1 hour after class start time\n\nThose who scheduled with ODS TC can leave after the presentation because exam will be separate (and graded by Dr B)\n\nSwitch off all electronics, no headphones—even better, remove and keep in bag\nWrite names and sections legibly on midterm paper\nDO NOT write anything on word banks because we collect them back, and they’re supposed to be a reference for the fill-in-the-blank questions\n\nThere’ll be separate rough sheets for calculations, or can even use blank space in the end of the test booklet"
   },
   {
     "objectID": "weekly-notes/index.html",
