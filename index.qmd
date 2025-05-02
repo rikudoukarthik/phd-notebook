@@ -18,14 +18,6 @@ If you are part of the `gklab` group on Gitlab, the easiest way is to use this p
 If you are not part of the `gklab` group on Gitlab (or wish to host this on Github instead), you can directly create a copy of this notebook project onto your computer with the following command: `quarto use template https://gitlab.com/gklab/templates/lab-notebook-template-2/-/archive/main/lab-notebook-template-2-main.zip`. 
 If you choose to go this route, you will have to connect the repository to Git etc.; I assume you know how to do this.
 
-:::{.callout-note collapse="true"}
-### Video instructions for gitlab users
-
-{{< video media/use-template.mp4 >}}
-
-:::
-
-:::{.callout-note collapse="true"}
 ### Steps for gitlab users
 
 1. Once logged into GitLab, create a new repository by clicking on the blue "New Project" button at the top-right of the screen. 

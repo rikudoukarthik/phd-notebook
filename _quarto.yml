@@ -2,13 +2,13 @@ project:
   type: website
 
 website:
-  title: "My lab notebook"
+  title: "Karthik's PhD notebook"
   navbar:
     background: "#4A7862"
     foreground: "#F3F3EE"
     search: true
     left:
-      - weekly-notes/index.qmd
+      # - weekly-notes/index.qmd
       - coursework/index.qmd
       - teaching/index.qmd
       - meetings.qmd

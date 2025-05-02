@@ -5,7 +5,7 @@ projects: biol1208
 
 ## 2025-01-10 
 
-*I missed this prep meeting because of my Internationl Student Orientation*
+*I missed this prep meeting because of my International Student Orientation*
 
 ## 2025-01-17
 
@@ -76,3 +76,23 @@ C-I Teaching Toolkit available
 - Write names and sections legibly on midterm paper
 - DO NOT write anything on word banks because we collect them back, and they’re supposed to be a reference for the fill-in-the-blank questions
 	- There’ll be separate rough sheets for calculations, or can even use blank space in the end of the test booklet
+
+## 2025-03-21
+
+- Very long experiment, don’t allow more than 1 repeat (ideally no repeats)
+    - Extracts cannot be easily prepared, unlike last class with blood
+- No rinsing needed this time since acetone will evaporate; only real discard is capillary tubes, rest in discard bottles near sink
+- To troubleshoot, give the chromatography solution a whiff: acetone smells like nail polish remover, solvent smells like gas—so check for more acetone
+- Leave doors open, can open hallway windows, can even try turning on fan above fridge
+- Keep ensuring chrom. jar are closed (esp. after they take out chrom. paper)
+- For 209, extra solvent is in 214, yellow cabinet
+- 4 mL is how much is required in cuvette to get spec. reading
+- On chrom. paper, start the lines 3 cm from the end (jar needs 1 cm height of solvent)
+
+## 2025-04-11
+
+- Come early (~15 min) to pour agarose gel so that they solidify during lecture, and to organise plasmid tubes into racks in fridge
+    - Each tray ~ 12.5 mL (don’t overpour)
+    - Use pipette but immediately rinse with hot water
+    - Put agarose flask back in incubator
+- Allow them to hold gel with hands and place in rack
