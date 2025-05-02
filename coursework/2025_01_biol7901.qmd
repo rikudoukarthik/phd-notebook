@@ -1,0 +1,599 @@
+---
+title: "BIOL 7901: Frameworks for Community Ecology"
+date: 2025-01
+projects: biol7901
+---
+
+# W02 (2025-01-23)
+
+Due to snow school closure, we were instructed to watch [Laughlin’s lecture on YouTube](https://www.youtube.com/watch?v=A-7-opmav4M) for this class.
+
+## Across Boundaries Seminar Series 2019 - Dr. Daniel Laughlin
+
+- Interested in making ecology more predictive, not just for theory development but also for practical reasons (restoring functionality in ecosystems)
+- Framework that mathematically integrates species:
+	- Pools
+	- Traits
+	- Filters
+	- Interactions
+- Apply framework to develop species assemblages that achieve certain (restoration) objectives
+- Species list: fundamental unit of community ecology
+	- Fundamental, but very difficult to predict
+- Current popular general framework is good (see fig in HilleRisLambers et al. 2012) but *makes no predictions*
+- Can we have a model that takes information of species pools along with traits, and predicts their abundances along a given environmental gradient?
+	- First attempt: Shipley 2006 CATS model
+		- Uses an equation with individual trait values averaging to give “optimal” trait value for that community
+		- But this was criticised because getting these trait values requires observation of community-weighted mean trait values, which is a circular factor (? even Poisson regression would be circular then) as far as predictive ability is concerned.
+		- Also uses average trait values only; intraspecific trait variation can be significant
+	- Traitspace (Laughlin et al. 2012)
+		- Uses likelihood approach: model traits with environment to get likelihood curve along trait axis
+		- Quantifies trait distributions and environmental filters, then uses Bayesian approach with Monte Carlo integration to compute posterior distributions of species P (S|E)
+		- The default likelihood approach ( traits = f(environment) ) was compared with vital rates approach (survival = f(traits x environment) ) (Laughlin et al. 2018) — and mostly found support
+		- But this still uses only averages… and focuses only on abiotic factors
+	- Banquo (integrating biotic interactions with Traitspace approach):
+		- Started with Lotka-Volterra models (population growth is limited by species interactions), and to link this approach with Traitspace approach, crucial factor is carrying capacity K
+		- Traitspace (env. filtering, i.e., environment –> traits –> K) + (alpha ← traits) species interactions (Lotka-Volterra) 
+		- = N (= alpha^-1 x K)
+		- When competition absent, Banquo model reduces to Traitspace
+		- Traits used to predict K and alpha would be different (abiotic vs biotic relevance)
+		- But how to quantify effect of traits on competition (species interactions)? *(was this answered in the talk?)*
+		- Tested with data from wetland in New Zealand; Banquo outperformed Traitspace and was closer to observed, though still not perfect
+- Application of the models
+	- For restoration, we generally compare to historical baseline, but historical conditions may not be completely relevant today
+	- Various factors such as climate warming may have changed species mortality rates and recruitment rates (which depend on traits and environment)
+	- Information on desired conditions (historical data + future projections) –> trait-based objectives –> *via new models* –> species assemblages that meet objectives
+	- Application deals with species, not traits; we need quantitative model to translate trait values into species assemblages
+	- Laughlin’s current model(s) (Laughlin et al. 2017) for this application aspect still do not incorporate species interactions, so are only Traitspace approaches
+		- Individual trait values can be manipulated to achieve the overall optimal trait value (desired outcome)
+	- Don’t limit species pool to historical species list, many times no-analog assemblages are better placed; consider how species might move in future
+- Laughlin suggests very careful trait selection (strong ecophysiological relevance) to be able to advance theory of trait-based ecology (link them to demographic rates), contra using large number of traits and data mining/machine learning
+- Have incorporated negative species interactions (competition), but not yet figured out how to incorporate positive (mutualistic)
+- Have not incorporated other trophic levels (animals, pathogens), only for simplicity
+
+# W03 (2025-01-30)
+
+## Ch. 1: A General Framework for Community Ecology
+
+- Community vector can at times represent a small and narrowly defined location, and a larger area at other times
+- Two central challenges of community ecology: assembly & response rules (both involve prediction)
+- How to define a single community based on size and features? –> Authors suggest to leave this unanswered in the general context, but to rather use practicality when determining the answer on a case-by-case basis.
+- We can describe a region/landscape using its communities if POV of community vector C, or using its habitat if POV of causal factors of community vector C
+- Response rules might seem more complicated than assembly rules at first, but we also have additional information (the prior state of C from P)
+- Filters force convergence of traits; competition acts the other way and disperses it to an extent.
+- Central issues in community ecology do not really deal with time scales larger/older than 10^6^ ya (that include continental drift, speciation, etc.)
+- Emigration not included in their version of assembly rules, while immigration is.
+
+### Summary/provocative questions
+
+- If we are to leave “community” undefined in the general context, what does that imply for this science (studying something abstract)?
+
+From discussion:
+
+- Why did they not define “pattern” along with definitions of other terms?
+- Kyle: found inconsistencies in their usage of “community” (sometimes approximate vector C, but other times seem to want it to be more restrictive)
+
+### Confusing/unclear
+
+- Re. competition forcing convergence/divergence of traits: in the example of plant height being selected for due to competition for light, in this case wouldn’t the community also have understorey plants adapted for low-light conditions, which would then be again divergence of traits? And here access to light would be an abiotic filter that “forces convergence” of plant height to tallness.
+
+From discussion:
+
+- Framework depends on descriptive information/patterns
+- ~~Trophic levels: how do you practically account for~~
+
+### Missing/disagree/critique
+
+- Do not address how “population” would fit into their framework of landscapes of varying scales, in relation to “community”.
+	- Kyle: both P and C would have their own populations, p of P would be larger than p of C
+	
+From discussion:
+
+- Fig. 1.4 depicts the opposite? Or caption is wrong.
+- Recent critique about notion that environmental filters come first at the larger scale before competitive filters—not addressed
+- Pushback against Observational/descriptional; important to get distracted by things like anthropogenic changes
+
+# W04 (2025-02-06)
+
+## Ch. 2: Filters
+
+- In their terms, causal factor refers to only P --> C, and "driver" refers to only changes in C
+- Want to rank filters based on “power”/relevance: 1 - S/Q (Proposition 1)
+- We need good criteria for determining P
+- Habitats with lower effects of abiotic filters may experience higher effects of biotic filters (competition, predation)
+- Both herbivores and fires remove biomass, but herbivores are generally more selective
+- Fire is also linked to drought
+- Authors suggest that in most communities/habitats, the number of important/powerful filters is actually relatively low (Proposition 2), and many species are controlled by the same filter(s) (Proposition 3).
+
+### Summary/provocative questions
+
+- When they talk about most ecological systems nowadays being deficient in large predators, why are humans not being factored in at all? Aren’t they the large predator in most of those systems?
+
+### Confusing/unclear
+
+- With their emphasis on C and P, they could have stuck with those in Proposition 1 instead of introducing S and Q
+
+### Missing/disagree/critique
+
+- I felt that this chapter, unlike previous, was citing mostly only New World literature; e.g., lots of field experimentation done in Europe like old field succession
+
+### Intra-group discussion
+
+- Kyle: They seem to focus just on how P becomes C (identities), ignoring things like relative abundances, spatial patterning, etc.
+- Z: inconsistent definitions of C
+- Anita: they seem to be focusing on how C forms from P in primary succession, not later
+- Kyle: “one option is to trust professional opinion” can be criticised
+- Time---what is “few years”, and how many years is enough?
+- Kyle: imposing the same power for filters is extremely difficult; comparing relative power of filters is empirically difficult
+- Anita: need to provide recommendations on how to overcome time/money/logistical challenges
+
+### Larger discussion
+
+- How would you describe/visualise dispersal limitation as a filter, aside from abiotic and biotic?
+- Group 1 thought one of the authors’ points was that it doesn’t make sense to quantify power of filters---opposite of what I took away?
+	- Gaurav: risk of quantifying is making real something that is abstract; he doesn’t think authors are recommending these 0-1 numbers should apply everywhere and everyone should do it
+- Richard: they haven’t addressed how filters act interactively (additively, or multiplicatively?)
+	- How do attribute the equation (power of filter) to any one filter
+
+# W05 (2025-02-13)
+
+## Ch. 3: Species pools
+
+- Many problems with defining species pools: scale, ecoregions, absent but nearby, absent but may be present in future, etc.; but much grunt work already done (field guides, regional checklists, etc.) which is a positive
+- Extinction rate in a community is proportional to the number of species in a community, but also affected by many other biological aspects
+- Interactions affected Q: facilitation (mutualisms), competition
+- Even two landscapes that have strong filters acting upon them may have very different speciation rates (Mediterranean vs mangroves)
+- Predictions of future compositions should include potential invaders
+- Despite complexity, recommend to use some standard method of ascertaining pools so that there is consistency, then modify it slightly
+
+### Summary/provocative questions
+
+- Richard: Most models o theories in ecology assume that regional species pools are stable while accounting for dynamism in local pools (e.g., island pools). How can ecological frameworks account for temporal variation/dynamism in regional species pools?
+
+### Confusing/unclear
+
+- Alpha diversity defined as “regional pool”—always thought of it as community
+- Pool –> list of species that could occupy *before filtering begins*: but they have already considered some select filters (geography)
+	- Examples of mangroves of Nova Scotia: mentioning frost reducing pool to zero (that is including filters!)
+- p84. What was the point of the Partel example? Quickly moved on to Keddy’s example. Then abruptly moved back to Partel—jarring!
+- Luca: how can we go beyond the neutral scenario (like the dS/dt formula they bring up)
+
+### Missing/disagree/critique
+
+- p85, para 2, line 1: they equate regional species pool with what they call “habitat-specific pool” which is exactly the opposite of what they say earlier
+- Same old: jump into something, nah maybe not (standard terminology for pools)
+- Most examples plant-biased, with no analog provided for mobile systems (e.g., “quadrats”, mobility/dispersal, definition of unit/scale)
+- When discussing invasive species, they don’t distinguish between true invaders and just non-native species. And are the latter a big problem?
+- (From discussion:) Chapter might have benefited from organising differently
+
+# W06 (2025-02-20)
+
+## Ch. 4: Traits
+
+- Understanding of the natural world: mostly species-by-species approach
+- This species-oriented approach is not enough
+- Frank Rigler criticised this approach and instead offered a switch to empiricism in ecology (quantitative relationships between DV and IV)
+	- Zeno’s tortoise
+- Describing biological diversity requires two maps: one of evolutionary convergence (traits) and one of evolutionary past (phylogeny). In this case, phylogeny equivalent to divergence.
+- Alexander von Humboldt prepared one of the earliest functional classifications
+- Human tendency to conflate functional types/groups with traits—need to be considered as separate fields of inquiry
+- Compilation vs screening for trait data/matrices:
+	- Compilations have been growing recently, but many variations like methods used in measuring variables, the variables measured, etc.
+	- Screening is instead manipulating some environmental factor in *controlled and standard* manner and looking at responses in *entire large set of species* (thus, brings in environmental factors)
+		- Grime et al. 1981
+	- Instead of env. factors, it’s also possible to make set of species interact with a standardised neighbour set (herbivory, competition, disease)
+		- Phytometer experiments (Clements 1933)/bioassay approach
+	- Comparative ecology
+	- Suggest always using local trait measurements for local studies; global compilations for global-scale questions
+- Trait matrices have two dimensions: no. of species, no. of traits. Challenge is to find the right tradeoff between the two.
+- “Intrinsic dimensionality” (Laughlin 2014) in organisms might help us narrow down search for “right” no. of traits to a small set of the most important ones (because many will be correlated, and some will not have as big an impact as others)
+
+### Summary/provocative questions
+
+- I find the intrinsic dimensionality concept interesting. Have there been challenges to this idea? If we do reach a point where we are able to visualise how this dimensionality looks for multiple taxa, what sort of cross-taxa comparative inferences can we make?
+	- Kyle: 
+
+### Confusing/unclear
+
+- Brought up issue of conflating functional groups with functional traits, but I didn’t find any conclusion to this
+	- Kyle: some cases (controlled studies in field) when focusing on groups is important, and some cases where opposite
+- p36. Example of Himalayan birds: showed how traits are related to environmental factors, but what was the point being made?
+
+### Missing/disagree/critique
+
+- p. 125: Example given for “… people who can name everything and yet otherwise know very little …” is maybe contrived and not appropriate: that is going into conservation, not about what they knew
+- EltonTraits and AVONET not discussed in part about new large-scale trait datasets
+
+### Discussion
+
+- Z: p 139 not possible to easily measure based on resources they use
+- Kyle: p.128 some biologists seem to get stuck early in career and focus on one organism for the rest of their lives—nothing wrong with that—they argue that this doesn’t contribute much to understanding ecol. comm., but this is not true, e.g, keystone species
+- Richard: leaf economics, water conduction; a couple of examples to demonstrate below-ground traits could be important
+- Ahmani: Comparative ecology, doing controlled experiments: they mention can be done in field, but how controlled would those be really?
+
+Luca: HOW do we shift from species-based to trait-based without going back to species (choosing traits)? Shouldn’t we account for plasticity, heritability in all the traits before choosing them?
+
+	- Gaurav: p 138. “Where is one less likely to find useful generalizations about traits and environment than when collecting data on  single species?” why is this necessarily true if species do not all respond differently? 
+	    - Karthik: Their attack is on focusing on only one species always.
+	- Kyle: Their view of community ecology is relatively narrow, and there are signs of that throughout the book so far.
+
+Femi: struggling to relate to their notion that species identities matter less than traits, etc. 
+
+Kyle: there’s also hard vs soft traits (physiological, hard to measure vs proxies for those, easier to measure). Seem to use less common terms (e.g., LMA vs SLA)
+
+Gaurav: in plant and microbial ecology, trend towards measuring traits automated (drones, etc.); then comparing these traits with harder traits---taking rich matrix of data and condensing to something humans can interpret. Thoughts?
+    - Kyle: Matches with their narrow view: predictive models, etc. But that is not the same as causation, and these approaches may not entirely work in causation contexts.
+    - Anita: seems like their view of ecology is that end goal to predict what species where.
+
+# W07 (2025-02-27)
+
+## Ch. 5: Trait-Environment Interactions
+
+- Proposition 4: power of filter across multiple habitats can be quantified by strength of relationship between environmental gradient and traits (standard statistical tool like R^2^ )
+	- Using a correlation metric for predictions—how appropriate is that?
+- Prop. 1 was for a single habitat, while Prop. 4 is for across multiple habitats
+- Fourth corner problem: quantifying relationships between traits and environment (fourth matrix in community ecology)
+	- Static: abundance-based quantification
+	- Dynamic: fitness-based quantification
+- Ease of computation and simplicity of regression has popularised CWM approach
+	- Unreliable to understand adaptive value of trait (dominant species do not always exhibit traits conforming to mean)
+	- Snapshot does not need to reflect optimal trait values (disturbance, dispersal limitation, or other rapid change)
+	- Another statistical issue: lack of independence of CWM among plots having the same species
+		- Account for species non-independence by using taxon-free approach in sampling traits
+- Fourth corner approach: CWM but using permutations to see if patterns observed are robust (or just by chance)
+- Multi-level models: traits are not response but predictor (along with env. conditions), and species abundances are now response, with species ID as random effects
+- Using population growth instead of snapshot abundances is better in some cases (would be almost identical to multi-level models)
+- But discerning those “some cases” is important; sometimes the simple solution is the better one.
+
+### Provocative questions
+
+- p. 167 last para: Only way traits can impact community assembly is if traits are selected for along gradient. Do priority effects satisfy this rule?
+	- Gaurav: more general version of this is that there has been no consideration of species interaction
+- p. 183 last para: if a population is growing over several years within a community, consider the species to be well matched to that environment—shouldn’t stable state be considered the good match? (sort of Malthusian, but still)
+	- If some species grows extremely rapidly and eventually leads to the collapse of the community, would that be fitness? (Though I struggle to think of examples.)
+
+### Confusing/unclear
+
+- Not really sure how taxon-free approach eliminates the issue of species non-independence in CWM across plots. Even if you don’t note down which species the trait you measure belongs to, the samples will still be affected by which species are abundant in the plot.
+	- As a corollary, I think they haven’t explained the issue of species non-independence very well (how species “get in the way”). *They finally get to a better version at the end of the section, “trait values are often measured at the species level”.*
+	- When they finally got to the point about including species identity as random effects, it felt very anticlimactic and a very roundabout way of explaining it.
+- Re. multi-level models. p. 177 “it shifts the task from analyzing trait-environment *relationships* to trait-environment *interactions* that affect species abundances” — but traits and environment/filters are still on opposite sides of the equation!
+	- They mean using random effects for species ID, and interaction term as fixed effect, changing relationships to interactions
+
+### Missing/disagree/critique
+
+- Fig. 5.2 (p. 177) graph of corolla curvature against bill curvature has an interesting trend line fit!
+- Good that data has been made available, but not the best long-term archival strategy (GH)
+	- And book mentions CSVs but there are no CSVs in the RData file
+- p. 187 last para: “it is an anthropogenic landscape that humans have manipulated and often **degraded** for over 30000 years”—at this point should it really be called degradation?
+
+# W08 (2025-03-06)
+
+## Ch. 6: Functional Groups
+
+- Nested method: first consider assembly of functional groups, then separately that of species
+- Combinatorics in statistics: the possible distributions of abundance of balls into fixed number of buckets
+- Think of “early successional” functional types more as adaptation to ongoing natural disturbances, than as filters that primarily shaped functional types
+- In many cases (e.g., stream invertebrates), focus on taxa might be major underrepresentation of true biological diversity since identification only until morphospecies—so better to look at functional groups/traits
+- Many studies of functional classification are too narrow in focus, and therefore already eliminate some meaningful ecological variation. Authors suggest focusing on larger-scale patterns.
+- How many functional groups are found in a community?—needs answer at two different scales:
+	- At ecological/community scale: How many functional types will fit into a community?
+	- Evolutionary: How many functional types will evolve in response to a set of filters?
+- Authors claim that enormous effort has gone into developing phylogenetic classifications, and ask for similar efforts for functional group classification
+
+### Provocative questions
+
+- 
+
+### Confusing/unclear
+
+- Such a short paragraph for “Functional types of mammals” and “… of fungi”. What was the point of these sections?
+	- More generally, left feeling incomplete/wanting more
+
+- Gaurav: their opinion seems to be a pragmatic approach: if we’re measuring something meaningful, then it should be worth doing. But this perhaps misses out on questions worth asking to delve deeper.
+	- Functional groups may be useful, but what are dangers of ignoring some of the edge cases within groups?
+- Gaurav: perspective of phylogenetics and functional being contradictory/opposite views seems outdated
+	- Kyle: “paradox” just seems to be a word they’re using. He’s personally opposed to considering the two contradictory/opposite. 
+- Karthik: is arbitrariness fine?
+	- Rohit: on broad scale, will start arbitrary but at finer scales, there will be many decisions that can be taken on objective knowledge
+
+### Missing/disagree/critique
+
+- p. 208 end: they claim that the Iberian example is at very fine scale, because it describes variation within a single functional group—but treecreepers and tits surely aren’t in the same guild! (How do you define guild?)
+- Fitness landscapes introduced but let go of… As usual.
+
+Kyle: niches are defined by organism, not by environment; so there is no “empty niche”
+
+# W09 (2025-03-13)
+
+## Ch. 7: Predictive models of community assembly
+
+- Two main predictive modelling approaches: Community Assembly by Trait Selection (CATS; aka maxent; linear equations built with average trait values to predict species relative abundances), Traitspace (incorporates intraspecific trait variation, Bayesian prediction of species relative abundances)
+- Claim that both models are generalisable to any ecosystem, but no. of traits should be < no. of species
+- CATS selects for solution that maximises evenness! 
+
+### Provocative questions
+
+- p. 246: E –> T –> C. Is this always true, is T always in the middle? e.g., in the case of priority effects does this remain the same or do T and C switch places? Can we think of scenarios where evolutionary history (phylogeny) determines C before T?
+	- Gaurav: it is an implicit assumption in the field of functional ecology, and it is also not always true. Doesn’t seem to be a way to reconcile hardcore functional perspectives with stochasticity.
+- Rachana: is CWM the best? What about Community Weighted Medians?
+- Z: is the applicability/relevance limited, if aim is just to get at relative abundances (considering we also need to measure species and traits anyway)?
+	- Gaurav: What are qs in comm. eco. that this approach might not be useful for?
+	- Kyle: species interactions, trophic networks, spatial patterning
+- Z: 
+
+### Confusing/unclear
+
+- p. 233: "Well, if we need to measure more things (traits) than we are predicting (species), our situation has probably not improved. Also, including more traits than species almost guarantees that there is no feasible mathematical solution, and therefore no prediction at all."
+	- But doesn’t this necessarily imply that species-poor ecosystems should have few traits involved? This is not a conclusion they have arrived at in any of the preceding chapters, and not sure how much sense this makes? In two-species associations (e.g., banj oak-chir pine), how can there only be one trait predicting the composition?
+- Why does CATS select for evenness? Is that desirable? (How is it the most statistically probable solution?)
+- p. 241–242: I didn’t fully understand the bit about circularity when using environmental variables for CWM (or vice-versa). Isn’t the CWM usually what should feed into Tk in the equation?
+
+### Missing/disagree/critique
+
+- First time mentioning “releves” but do not define it
+- p. 244: they conclude that ~8 traits is the golden number to aim for—but this is highly context-, taxon-, system-specific. What they seem to be glossing over in their argument for simplicity is this context-dependence which requires concerted ascertaining of this golden number, rather than following a universal rule.
+- p. 255 fig 7.5: looks like a poor match of observed vs predicted to me! And panel (j), with its unequal axis lengths hides the poor performance on y axis! 
+	- It would also have been nice to compare variation rather than just optima
+- “Natural history is not science”!
+	- Sometimes it’s good to not have a fixed end point, because it allows you to make new connections between ideas!
+- Anita: you need a lot of a priori knowledge in order to properly choose traits
+
+### Other
+
+- Gaurav: struck by how plant-centric this book is; does it have to do with the history of the development of this field?
+	- Rachana: maybe it has to do with the focus on environment and not biotic interactions
+	- Kyle: work on other taxa even historically has been about traits, but maybe not explicitly for the specific narrow application that’s discussed in the book
+
+# W10 (2025-03-20)
+
+## Ch. 8: Prospects and possibilities
+
+- Propositions 5 & 6, which define functionally assembled and fully assembled communities, in terms of numbers functional groups adapted to the habitat and species within them
+	- But then, how do we know the full list of functional groups adapted to the habitat? Even if we say filters determine this, how do we know whether our F vector is exhaustive?
+- When discussing coexistence, there is a general failure to distinguish between coexistence of different functional types (ergo distinct species) and that of similar species
+- Authors think that intraspecific limiting similarity is not very important in communities; usually involve stronger effect of dominance and disturbance
+- Again, the term “alvar” introduced with no explanation, like “relevees” earlier.
+- Comparison on max-ent vs min-ent: distribution of rel. ab. across species, pattern matched better in min-ent, but species identities were not necessarily correct because distribution does not contain info of species identity (just the rank order).
+- Maybe consider that community assembly in fact has two distinct elements: assembly of species that will dominate the community, assembly of species that will remain rare
+- They quickly move from points I agree with to those I disagree with though:
+	- Strong dichotomy drawn between science and natural history, whereas I don’t think considering it a dichotomy is right in the first place (they aren’t categorically opposite)
+
+### Provocative questions
+
+- Curious to know Anita’s thoughts on the section on assembly, redundancy and coexistence, where the authors use competitive frameworks and suggest disturbance-mediated coexistence like in the case of arid grasslands (which is also the system Anita works with).
+- Is there even value in trying to gauge inherent rank in subfields of science, and therefore look up/down upon certain ones? Or are the systems we have in place enough (albeit very imperfect) to ensure tax money is used in best manner (e.g., grant applications)?
+	- Especially they place unjustified value on conservation of rare species
+
+Xiyan: fully assembled communities: do we ever see them in reality, is it worth asking this question at all?
+
+Gaurav: seems they haven’t followed their own logical steps (species identity doesn’t matter)
+
+### Confusing/unclear
+
+Z:
+
+- Their goal wrt the tail-trimming section is not very clear. 
+- Ignore Fmax
+- Ecological degradation vs just community change: how do you define it?
+	- Richard: pollution is one clear example
+	- Rachana: everything is ecological change, and question of philosophy (value judgement on state 0 as better)
+
+### Missing/disagree/critique
+
+- Fig. 8.1 p. 269: “functionally assembled” when S = 1 for each functional type, but shouldn’t it be 1 < S < Smax?
+- p. 270: more filters operating, fewer no. of spec. occupying habitat, i.e., filters are additive if not multiplicative. But this is not true?! Some of their own examples, like with drought and flooding, contained a single very strong filter acting on a community of few species! Wouldn’t more filters also lead to greater niche diversity/packing?
+- Fig. 8.2 p. 280: prediction with functional groups is still poor! And there is also clearly something else going on, that the linear fit doesn’t explain.
+- They make the point of natural history not being worth taxpayer money in terms of benefit to larger public, but seem to place conservation (and conservation rarity) on a pedestal: but why should conserving a rare species like Plymouth Gentian be desirable or “worth” the public’s resources?
+- Also, using rare for conservation and not for sample, is the opposite of what I think makes sense, especially since conservation assessments have well-defined terms already and something like “threatened” is much better suited.
+- I find increasingly distasteful(?) how they view anthropogenic changes as being separate and “against” that of natural changes
+- Fig. 8.8 p. 312: how do you define “original state”?
+
+Rachana: They don’t mention how to foresee changes in filters when predicting for restoration
+
+# W11 (2025-03-27)
+
+## Book summary
+
+What have you taken away from this book that you feel can make a difference to the way you think of your research, the field of community ecology, or the scientific process more generally?
+
+- I think one main point which they raise, rather polarisingly, is to focus on traits in addition to species identity and phylogeny; and similarly, to strive for answers about process/mechanism rather than just looking for patterns.
+- The concept of intrinsic dimensionality I found I agreed with---which means most questions require context-specific approaches and thinking (which they failed to mention).
+
+What were you hoping to learn from this book that you feel you did learn? What were you hoping to learn but was missing?
+
+- I didn’t have many specific expectations going in. But since there was so much emphasis on predictive ecology, I was a bit underwhelmed when their models (especially Traitspace) were shown to perform rather poorly.
+- Femi: really missed the evolutionary/historical perspective
+- Richard: role of microbes missing
+- Anita: wish they’d expanded on how the filter view is problematic, at least in the Filters chapter
+
+What do we stand to gain if the field of community ecology shifted towards conducting research in the spirit of Keddy and Laughlin? What would we lose?
+
+- If we were to take parts of Keddy & Laughlin’s advice, I think the field would become more holistic and have more immediate impact especially for application. For instance, a stronger emphasis on prediction will likely lead to the development of much better modelling approaches in shorter time.
+- However, if we were to take their full advice verbatim, we would unfortunately narrow down the field again (e.g., omission of competition, dispersal, other interactions; science vs natural history).
+
+If you were to put forth a different set of "priorities" for community ecology, how would you structure them? (If you are not a community ecology researcher, you can apply this to your domain)
+
+- Not really sure. I don’t know if I necessarily disagree with the priorities they have chosen, mostly just disagree with how they’ve chosen to think about them.
+- I think even if many definitions may be arbitrary and/or dynamic, it is important to ensure that terms are used uniformly across the field.
+- Improving predictive power is definitely a good priority to work towards. I would extend that more generally and say improving the robustness of study design as well as analytical methods is important.
+- Z: involve stochasticity
+- Rachana: incorporate spatial scale. Maybe also applicable to disciplines like invasion ecology.
+- Richard: dynamic species pools, incorporate extinctions, climate-driven drift
+- Gaurav: thinking a lot about predictive ecology. Should we be emphasising prediction so much, or should we prioritise understanding first?
+    - Kyle: all natural phenomena divided into patterns and processes; Kyle thinks K&L is pattern-based approach, not process-forward like Vellend. Pattern-based often used for predictive purposes, not necessarily explanatory.
+
+If the goal of community ecology is to predict species vector with relative abundances, how would you articulate the value in this science---aside from the context of environmental change and conservation?
+
+- To me, there is value in even just the understanding we gain about things like assembly. But do other community ecologists agree, or do they think there are other more important values?
+- Anita: canonical three goals of science: understand, infer, predict
+
+Is the way they’ve presented the conceptual framework unique and useful for beginner students?
+
+- Ahmani: Think so, especially the way they’ve provided many examples, analogies, multiple systems
+- Anita: Think Vellend book is comparable in how they’ve presented the framework, also of course considering drift, etc. The examples in Keddy & Laughlin and them providing data & code is useful and commendable
+- Z: do we agree that the logical flow is one strength of the book?
+	  - Gaurav: yes across chapters, no within chapters
+- Gaurav: kinda surprised restoration ecologists were so receptive about their views
+- Kyle: prefer Vellend as first read, but think Keddy & Laughlin should also be part of reading
+
+# W13 (2025-04-10)
+
+**Martini et al 2020. Functional trait-based approaches as a common framework for aquatic ecologists**
+
+- Interactive mental map with links to appropriate literature searches on Scholar---very cool!
+
+## What kinds of exciting ecological insights might we achieve by using FTBAs for aquatic ecology?
+
+Z: 
+- Freshwater systems most threat; so can help decide which species need to be saved (based on function)
+- Delineating species distributions
+- Reintroduce traits by deextinction (e.g., direwolves)
+
+- Gaurav: How strange it seems to need a paper about using FTBA for aquatic ecology specifically, as if in a silo. If we assume there is merit to aquatic ecology being siloed from terrestrial, then should freshwater vs marine also remain separate (against the point of the paper)?
+	- Kyle: Inherent differences and logistics, methodology, etc. (practice) lead to specialisation/silos. But ecological principles are the same across taxa, systems, time and space.
+
+- Biological compartments: what is that? and is it useful to have this specific term?
+
+## What might we lose by focusing aquatic ecology on trait-based frameworks?
+
+- As they summarise in Conclusion, population dynamics, and anything else that requires taxon identity (and natural history)
+
+Pritha:
+
+- Intraspecific variability, so TBF might exclude some taxa
+
+Rounak:
+
+- Will same functional traits be applicable across realms (e.g., oceanic vs freshwater)
+- Species interactions may not be accounted for by traits
+
+Kyle:
+
+- What works best depends on question. Taxon might not be relevant; if interested in ecosystem function, maybe focusing only on traits is better for this question. But much of comm. ecol. interested in populations of organisms; in communities, conspecifics tend to be more influential than heterospecifics, so population-level focus matters. So, middle-ground is where most of us lie. Questions can be asked anywhere on this continuum. 
+- Nothing particularly odd about aquatic systems; above idea remains applicable across sytems.
+
+## What practical challenges can you imagine for integration across aquatic systems?
+
+- Authors have listed huge number of databases! Unification desirable, feasible?
+
+Luca:
+
+- Associating genomic patterns with functional traits is very hard
+- Using genomic approach (species identity-based) kind of at stalemate wrt species-based vs trait-based
+
+Ahmani:
+
+- Certain taxa difficult to measure morphological traits (e.g., size)
+
+Rachana:
+
+- Different traits would have evolved at different points for different contexts, so do we/how do we integrate all these differences when answering the same question?
+
+Femi:
+
+- How to account for trait standardisation across different systems?
+
+# W14 (2025-04-17)
+
+**Louca et al. 2018. Function and functional redundancy in microbial systems.**
+
+- High taxonomic diversity, but low functional diversity; large turnover in taxa performing same functions
+	- Tax. and func. composition are decoupled
+	- Reflects weak association between prokaryotic functions and phylogeny
+- Things like horizontal gene transfer could be the cause
+- Low immigration rates are not a limiting factor in open microbial systems
+- Functional redundancy seems to be a common aspect of many microbial systems
+- In this context of microbial systems, functions are seemingly limited to biochemical roles
+
+## How might our understanding of microbial diversity change if we prioritize function over taxonomy?
+
+(in perspective, methods, or ecological theory)
+
+- Don’t we already do, given the challenges of focusing on the huge tax. diversity and identifying meaningful taxonomic units?
+
+Richard: 
+
+- recent methods like genomics and transcriptomics shows that most microbial ecologists are focusing on function and not so much on individual species
+- depends on question and who is asking; e.g., taxonomists vs ecologists
+
+Kyle:
+
+- Irrespective of organism, might always be that switching from tax. to func. perspective reduces number of units. May also be that evenness increases from the same switch.
+- At low levels of redundancy, same level of predictability between tax. and func. perspectives.
+
+## How might functional redundancy influence the way we study or manage ecosystems?
+
+- Resources could be better or more efficiently spent by focusing on ecological function, rather than worrying about certain species declines
+
+Z:
+
+- Invasive species management: looking at how are invasive plants affecting soil, rather than looking at individual species changes
+- Gut flora: don’t need to focus on species, just function
+- Gaurav: if need to reintroduce certain function, might be better to focus on function rather than reintroduce certain species
+- Gaurav: are there lessons we can learn by manipulating microbial coomunity that can be applied to macro communities? Are we currently “resorting” to functional approach to microbes?
+
+## How do we balance the need for general patterns with the uniqueness of specific organisms or systems?
+
+- I don’t know! 
+
+Rachana: 
+
+- In one context, focusing on function can be a form of focusing on general, whereas how individual systems achieve that function might be focusing on nuance
+
+Rohit:
+
+- Perhaps focusing on nuances in microbial systems might be more difficult than for macrobial systems, because time scales are much smaller.
+
+...
+
+- Can focus on uniqueness when high redunancy, because many ways of achieving function.
+- Can also focus on it when there is an identified utilitarian value
+
+# W15 (2025-04-24)
+
+**Levine et al. 2025. Why ecologists struggle to predict coexistence from functional traits.**
+
+- Trait dispersion analyses assume that interspecific trait variability that’s larger than expected, if exist, are contributing to coexistence. But most studies have found neither over- nor under-dispersed trait patterns.
+- Predicting coexistence from metrics proximate to coexistence itself probably work well, but functional traits not proximate.
+- Fortunately, mechanistic models show that not only is best-case scenario from traits perspective unlikely to be true, but so also is the worst-case (metrics closest to coexistence being the only source).
+- R*: minimum resource level at which species can maintain its population in a well-mixed system limited by a single resource
+
+### What impact could dispersion in functional traits within and between species have on coexistence?
+
+(Levine et al don't talk much about trait dispersion/intraspecific variation in traits with regards to PIMs.)
+
+- I thought they assumed that this variation would be accounted for by variation in PIMs?
+
+Andrew:
+
+- Talk a lot about inter- but not much about intraspecific variation.
+- Figures not very intuitive
+
+### How can gaining a better understanding of the relationship between functional traits and biotic interactions improve predictions of community responses to environmental change?
+
+Z:
+
+- Xiyuan: Might not be necessary to measure functional traits to understand coexistence
+- Richard: better forecasting
+
+### What do we gain/lose from integrating the use of PIMs into community ecology? What are the practical implications associated with the use of PIMs?
+
+- I guess the PIMs themselves are not necessarily novel in function, just put a name to it now. But their critical function is determining the ways in which functional traits combine quantitatively to produce some system-level outcome—is this really all that different from what we were thinking of previously? This mathematical formulation seems the hardest part.
+	- i.e., how do measurable functional traits (and other things like demographic rates) combine quantitatively to produce certain outcomes?
+	- Gaurav: 
+		- Trait ecology originated as physiological property of organism, but over the years the same ideas were co-opted when talking about demography.
+		- Their intended audience was people trying to link coexistence (which is a purely demographic property) with traits directly, while ignoring demography.
+		- So this was just a reminder to consider B without going directly from A to C
+
+- Rohit: how easy would it be to get demographic data, more difficult than traits to obtain?
+- Gaurav: very thoughtful piece, but not necessarily making it practically easier to do this work generally across all systems (their examples are pretty simple systems); especially in systems where physiological traits do not have such a central role.
+- Rohit: maybe hard to generalise PIMs
+	- Karthik: requires lots of theoretical work and validation to make sure links are comprehensive, before empirical work can start, because PIM framework breaks down otherwise
+	- Gaurav: what we’ll lose is if Step 1 Establish PIMs is integral, we might spend a looong time on that.
+
+
+Gaurav: Lot of literature (K&L, some fo these papers) seem to work for functional groups, but not necessarily among species within groups 
+
+- Kyle: lots of other ways species interact than coexistence; scope of this paper is limited; functional traits not necessarily used to predict (only) coexistence
+- Xiyuan: functional traits not necessary to get at coexistence
+	- Kyle: if question is coexistence, it will always boil down to traits

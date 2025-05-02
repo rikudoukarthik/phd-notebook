@@ -1,9 +1,0 @@
----
-title: 'Demo paper title'
-author: Demo Author
-year: 2020
-projects: project-1
----
-
-{{< lipsum 1 >}}
-

@@ -1,0 +1,1467 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.40">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2025-01-01">
+
+<title>BIOL 7901: Frameworks for Community Ecology – Karthik’s PhD notebook</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-b241fbb7a02b0ecdd77210d8cffa83e2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Karthik’s PhD notebook</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../coursework/index.html"> 
+<span class="menu-text">Coursework</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../teaching/index.html"> 
+<span class="menu-text">Teaching</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../meetings.html"> 
+<span class="menu-text">Meetings</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-projects" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Projects</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-projects">    
+        <li>
+    <a class="dropdown-item" href="../projects/how-to.html">
+ <span class="dropdown-text">How to create new projects</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../projects/project-1/index.html">
+ <span class="dropdown-text">project-1</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#w02-2025-01-23" id="toc-w02-2025-01-23" class="nav-link active" data-scroll-target="#w02-2025-01-23">W02 (2025-01-23)</a>
+  <ul class="collapse">
+  <li><a href="#across-boundaries-seminar-series-2019---dr.-daniel-laughlin" id="toc-across-boundaries-seminar-series-2019---dr.-daniel-laughlin" class="nav-link" data-scroll-target="#across-boundaries-seminar-series-2019---dr.-daniel-laughlin">Across Boundaries Seminar Series 2019 - Dr.&nbsp;Daniel Laughlin</a></li>
+  </ul></li>
+  <li><a href="#w03-2025-01-30" id="toc-w03-2025-01-30" class="nav-link" data-scroll-target="#w03-2025-01-30">W03 (2025-01-30)</a>
+  <ul class="collapse">
+  <li><a href="#ch.-1-a-general-framework-for-community-ecology" id="toc-ch.-1-a-general-framework-for-community-ecology" class="nav-link" data-scroll-target="#ch.-1-a-general-framework-for-community-ecology">Ch. 1: A General Framework for Community Ecology</a>
+  <ul class="collapse">
+  <li><a href="#summaryprovocative-questions" id="toc-summaryprovocative-questions" class="nav-link" data-scroll-target="#summaryprovocative-questions">Summary/provocative questions</a></li>
+  <li><a href="#confusingunclear" id="toc-confusingunclear" class="nav-link" data-scroll-target="#confusingunclear">Confusing/unclear</a></li>
+  <li><a href="#missingdisagreecritique" id="toc-missingdisagreecritique" class="nav-link" data-scroll-target="#missingdisagreecritique">Missing/disagree/critique</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#w04-2025-02-06" id="toc-w04-2025-02-06" class="nav-link" data-scroll-target="#w04-2025-02-06">W04 (2025-02-06)</a>
+  <ul class="collapse">
+  <li><a href="#ch.-2-filters" id="toc-ch.-2-filters" class="nav-link" data-scroll-target="#ch.-2-filters">Ch. 2: Filters</a>
+  <ul class="collapse">
+  <li><a href="#summaryprovocative-questions-1" id="toc-summaryprovocative-questions-1" class="nav-link" data-scroll-target="#summaryprovocative-questions-1">Summary/provocative questions</a></li>
+  <li><a href="#confusingunclear-1" id="toc-confusingunclear-1" class="nav-link" data-scroll-target="#confusingunclear-1">Confusing/unclear</a></li>
+  <li><a href="#missingdisagreecritique-1" id="toc-missingdisagreecritique-1" class="nav-link" data-scroll-target="#missingdisagreecritique-1">Missing/disagree/critique</a></li>
+  <li><a href="#intra-group-discussion" id="toc-intra-group-discussion" class="nav-link" data-scroll-target="#intra-group-discussion">Intra-group discussion</a></li>
+  <li><a href="#larger-discussion" id="toc-larger-discussion" class="nav-link" data-scroll-target="#larger-discussion">Larger discussion</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#w05-2025-02-13" id="toc-w05-2025-02-13" class="nav-link" data-scroll-target="#w05-2025-02-13">W05 (2025-02-13)</a>
+  <ul class="collapse">
+  <li><a href="#ch.-3-species-pools" id="toc-ch.-3-species-pools" class="nav-link" data-scroll-target="#ch.-3-species-pools">Ch. 3: Species pools</a>
+  <ul class="collapse">
+  <li><a href="#summaryprovocative-questions-2" id="toc-summaryprovocative-questions-2" class="nav-link" data-scroll-target="#summaryprovocative-questions-2">Summary/provocative questions</a></li>
+  <li><a href="#confusingunclear-2" id="toc-confusingunclear-2" class="nav-link" data-scroll-target="#confusingunclear-2">Confusing/unclear</a></li>
+  <li><a href="#missingdisagreecritique-2" id="toc-missingdisagreecritique-2" class="nav-link" data-scroll-target="#missingdisagreecritique-2">Missing/disagree/critique</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#w06-2025-02-20" id="toc-w06-2025-02-20" class="nav-link" data-scroll-target="#w06-2025-02-20">W06 (2025-02-20)</a>
+  <ul class="collapse">
+  <li><a href="#ch.-4-traits" id="toc-ch.-4-traits" class="nav-link" data-scroll-target="#ch.-4-traits">Ch. 4: Traits</a>
+  <ul class="collapse">
+  <li><a href="#summaryprovocative-questions-3" id="toc-summaryprovocative-questions-3" class="nav-link" data-scroll-target="#summaryprovocative-questions-3">Summary/provocative questions</a></li>
+  <li><a href="#confusingunclear-3" id="toc-confusingunclear-3" class="nav-link" data-scroll-target="#confusingunclear-3">Confusing/unclear</a></li>
+  <li><a href="#missingdisagreecritique-3" id="toc-missingdisagreecritique-3" class="nav-link" data-scroll-target="#missingdisagreecritique-3">Missing/disagree/critique</a></li>
+  <li><a href="#discussion" id="toc-discussion" class="nav-link" data-scroll-target="#discussion">Discussion</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#w07-2025-02-27" id="toc-w07-2025-02-27" class="nav-link" data-scroll-target="#w07-2025-02-27">W07 (2025-02-27)</a>
+  <ul class="collapse">
+  <li><a href="#ch.-5-trait-environment-interactions" id="toc-ch.-5-trait-environment-interactions" class="nav-link" data-scroll-target="#ch.-5-trait-environment-interactions">Ch. 5: Trait-Environment Interactions</a>
+  <ul class="collapse">
+  <li><a href="#provocative-questions" id="toc-provocative-questions" class="nav-link" data-scroll-target="#provocative-questions">Provocative questions</a></li>
+  <li><a href="#confusingunclear-4" id="toc-confusingunclear-4" class="nav-link" data-scroll-target="#confusingunclear-4">Confusing/unclear</a></li>
+  <li><a href="#missingdisagreecritique-4" id="toc-missingdisagreecritique-4" class="nav-link" data-scroll-target="#missingdisagreecritique-4">Missing/disagree/critique</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#w08-2025-03-06" id="toc-w08-2025-03-06" class="nav-link" data-scroll-target="#w08-2025-03-06">W08 (2025-03-06)</a>
+  <ul class="collapse">
+  <li><a href="#ch.-6-functional-groups" id="toc-ch.-6-functional-groups" class="nav-link" data-scroll-target="#ch.-6-functional-groups">Ch. 6: Functional Groups</a>
+  <ul class="collapse">
+  <li><a href="#provocative-questions-1" id="toc-provocative-questions-1" class="nav-link" data-scroll-target="#provocative-questions-1">Provocative questions</a></li>
+  <li><a href="#confusingunclear-5" id="toc-confusingunclear-5" class="nav-link" data-scroll-target="#confusingunclear-5">Confusing/unclear</a></li>
+  <li><a href="#missingdisagreecritique-5" id="toc-missingdisagreecritique-5" class="nav-link" data-scroll-target="#missingdisagreecritique-5">Missing/disagree/critique</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#w09-2025-03-13" id="toc-w09-2025-03-13" class="nav-link" data-scroll-target="#w09-2025-03-13">W09 (2025-03-13)</a>
+  <ul class="collapse">
+  <li><a href="#ch.-7-predictive-models-of-community-assembly" id="toc-ch.-7-predictive-models-of-community-assembly" class="nav-link" data-scroll-target="#ch.-7-predictive-models-of-community-assembly">Ch. 7: Predictive models of community assembly</a>
+  <ul class="collapse">
+  <li><a href="#provocative-questions-2" id="toc-provocative-questions-2" class="nav-link" data-scroll-target="#provocative-questions-2">Provocative questions</a></li>
+  <li><a href="#confusingunclear-6" id="toc-confusingunclear-6" class="nav-link" data-scroll-target="#confusingunclear-6">Confusing/unclear</a></li>
+  <li><a href="#missingdisagreecritique-6" id="toc-missingdisagreecritique-6" class="nav-link" data-scroll-target="#missingdisagreecritique-6">Missing/disagree/critique</a></li>
+  <li><a href="#other" id="toc-other" class="nav-link" data-scroll-target="#other">Other</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#w10-2025-03-20" id="toc-w10-2025-03-20" class="nav-link" data-scroll-target="#w10-2025-03-20">W10 (2025-03-20)</a>
+  <ul class="collapse">
+  <li><a href="#ch.-8-prospects-and-possibilities" id="toc-ch.-8-prospects-and-possibilities" class="nav-link" data-scroll-target="#ch.-8-prospects-and-possibilities">Ch. 8: Prospects and possibilities</a>
+  <ul class="collapse">
+  <li><a href="#provocative-questions-3" id="toc-provocative-questions-3" class="nav-link" data-scroll-target="#provocative-questions-3">Provocative questions</a></li>
+  <li><a href="#confusingunclear-7" id="toc-confusingunclear-7" class="nav-link" data-scroll-target="#confusingunclear-7">Confusing/unclear</a></li>
+  <li><a href="#missingdisagreecritique-7" id="toc-missingdisagreecritique-7" class="nav-link" data-scroll-target="#missingdisagreecritique-7">Missing/disagree/critique</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#w11-2025-03-27" id="toc-w11-2025-03-27" class="nav-link" data-scroll-target="#w11-2025-03-27">W11 (2025-03-27)</a>
+  <ul class="collapse">
+  <li><a href="#book-summary" id="toc-book-summary" class="nav-link" data-scroll-target="#book-summary">Book summary</a></li>
+  </ul></li>
+  <li><a href="#w13-2025-04-10" id="toc-w13-2025-04-10" class="nav-link" data-scroll-target="#w13-2025-04-10">W13 (2025-04-10)</a>
+  <ul class="collapse">
+  <li><a href="#what-kinds-of-exciting-ecological-insights-might-we-achieve-by-using-ftbas-for-aquatic-ecology" id="toc-what-kinds-of-exciting-ecological-insights-might-we-achieve-by-using-ftbas-for-aquatic-ecology" class="nav-link" data-scroll-target="#what-kinds-of-exciting-ecological-insights-might-we-achieve-by-using-ftbas-for-aquatic-ecology">What kinds of exciting ecological insights might we achieve by using FTBAs for aquatic ecology?</a></li>
+  <li><a href="#what-might-we-lose-by-focusing-aquatic-ecology-on-trait-based-frameworks" id="toc-what-might-we-lose-by-focusing-aquatic-ecology-on-trait-based-frameworks" class="nav-link" data-scroll-target="#what-might-we-lose-by-focusing-aquatic-ecology-on-trait-based-frameworks">What might we lose by focusing aquatic ecology on trait-based frameworks?</a></li>
+  <li><a href="#what-practical-challenges-can-you-imagine-for-integration-across-aquatic-systems" id="toc-what-practical-challenges-can-you-imagine-for-integration-across-aquatic-systems" class="nav-link" data-scroll-target="#what-practical-challenges-can-you-imagine-for-integration-across-aquatic-systems">What practical challenges can you imagine for integration across aquatic systems?</a></li>
+  </ul></li>
+  <li><a href="#w14-2025-04-17" id="toc-w14-2025-04-17" class="nav-link" data-scroll-target="#w14-2025-04-17">W14 (2025-04-17)</a>
+  <ul class="collapse">
+  <li><a href="#how-might-our-understanding-of-microbial-diversity-change-if-we-prioritize-function-over-taxonomy" id="toc-how-might-our-understanding-of-microbial-diversity-change-if-we-prioritize-function-over-taxonomy" class="nav-link" data-scroll-target="#how-might-our-understanding-of-microbial-diversity-change-if-we-prioritize-function-over-taxonomy">How might our understanding of microbial diversity change if we prioritize function over taxonomy?</a></li>
+  <li><a href="#how-might-functional-redundancy-influence-the-way-we-study-or-manage-ecosystems" id="toc-how-might-functional-redundancy-influence-the-way-we-study-or-manage-ecosystems" class="nav-link" data-scroll-target="#how-might-functional-redundancy-influence-the-way-we-study-or-manage-ecosystems">How might functional redundancy influence the way we study or manage ecosystems?</a></li>
+  <li><a href="#how-do-we-balance-the-need-for-general-patterns-with-the-uniqueness-of-specific-organisms-or-systems" id="toc-how-do-we-balance-the-need-for-general-patterns-with-the-uniqueness-of-specific-organisms-or-systems" class="nav-link" data-scroll-target="#how-do-we-balance-the-need-for-general-patterns-with-the-uniqueness-of-specific-organisms-or-systems">How do we balance the need for general patterns with the uniqueness of specific organisms or systems?</a></li>
+  </ul></li>
+  <li><a href="#w15-2025-04-24" id="toc-w15-2025-04-24" class="nav-link" data-scroll-target="#w15-2025-04-24">W15 (2025-04-24)</a>
+  <ul class="collapse">
+  <li><a href="#what-impact-could-dispersion-in-functional-traits-within-and-between-species-have-on-coexistence" id="toc-what-impact-could-dispersion-in-functional-traits-within-and-between-species-have-on-coexistence" class="nav-link" data-scroll-target="#what-impact-could-dispersion-in-functional-traits-within-and-between-species-have-on-coexistence">What impact could dispersion in functional traits within and between species have on coexistence?</a></li>
+  <li><a href="#how-can-gaining-a-better-understanding-of-the-relationship-between-functional-traits-and-biotic-interactions-improve-predictions-of-community-responses-to-environmental-change" id="toc-how-can-gaining-a-better-understanding-of-the-relationship-between-functional-traits-and-biotic-interactions-improve-predictions-of-community-responses-to-environmental-change" class="nav-link" data-scroll-target="#how-can-gaining-a-better-understanding-of-the-relationship-between-functional-traits-and-biotic-interactions-improve-predictions-of-community-responses-to-environmental-change">How can gaining a better understanding of the relationship between functional traits and biotic interactions improve predictions of community responses to environmental change?</a></li>
+  <li><a href="#what-do-we-gainlose-from-integrating-the-use-of-pims-into-community-ecology-what-are-the-practical-implications-associated-with-the-use-of-pims" id="toc-what-do-we-gainlose-from-integrating-the-use-of-pims-into-community-ecology-what-are-the-practical-implications-associated-with-the-use-of-pims" class="nav-link" data-scroll-target="#what-do-we-gainlose-from-integrating-the-use-of-pims-into-community-ecology-what-are-the-practical-implications-associated-with-the-use-of-pims">What do we gain/lose from integrating the use of PIMs into community ecology? What are the practical implications associated with the use of PIMs?</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">BIOL 7901: Frameworks for Community Ecology</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 1, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="w02-2025-01-23" class="level1">
+<h1>W02 (2025-01-23)</h1>
+<p>Due to snow school closure, we were instructed to watch <a href="https://www.youtube.com/watch?v=A-7-opmav4M">Laughlin’s lecture on YouTube</a> for this class.</p>
+<section id="across-boundaries-seminar-series-2019---dr.-daniel-laughlin" class="level2">
+<h2 class="anchored" data-anchor-id="across-boundaries-seminar-series-2019---dr.-daniel-laughlin">Across Boundaries Seminar Series 2019 - Dr.&nbsp;Daniel Laughlin</h2>
+<ul>
+<li>Interested in making ecology more predictive, not just for theory development but also for practical reasons (restoring functionality in ecosystems)</li>
+<li>Framework that mathematically integrates species:
+<ul>
+<li>Pools</li>
+<li>Traits</li>
+<li>Filters</li>
+<li>Interactions</li>
+</ul></li>
+<li>Apply framework to develop species assemblages that achieve certain (restoration) objectives</li>
+<li>Species list: fundamental unit of community ecology
+<ul>
+<li>Fundamental, but very difficult to predict</li>
+</ul></li>
+<li>Current popular general framework is good (see fig in HilleRisLambers et al.&nbsp;2012) but <em>makes no predictions</em></li>
+<li>Can we have a model that takes information of species pools along with traits, and predicts their abundances along a given environmental gradient?
+<ul>
+<li>First attempt: Shipley 2006 CATS model
+<ul>
+<li>Uses an equation with individual trait values averaging to give “optimal” trait value for that community</li>
+<li>But this was criticised because getting these trait values requires observation of community-weighted mean trait values, which is a circular factor (? even Poisson regression would be circular then) as far as predictive ability is concerned.</li>
+<li>Also uses average trait values only; intraspecific trait variation can be significant</li>
+</ul></li>
+<li>Traitspace (Laughlin et al.&nbsp;2012)
+<ul>
+<li>Uses likelihood approach: model traits with environment to get likelihood curve along trait axis</li>
+<li>Quantifies trait distributions and environmental filters, then uses Bayesian approach with Monte Carlo integration to compute posterior distributions of species P (S|E)</li>
+<li>The default likelihood approach ( traits = f(environment) ) was compared with vital rates approach (survival = f(traits x environment) ) (Laughlin et al.&nbsp;2018) — and mostly found support</li>
+<li>But this still uses only averages… and focuses only on abiotic factors</li>
+</ul></li>
+<li>Banquo (integrating biotic interactions with Traitspace approach):
+<ul>
+<li>Started with Lotka-Volterra models (population growth is limited by species interactions), and to link this approach with Traitspace approach, crucial factor is carrying capacity K</li>
+<li>Traitspace (env. filtering, i.e., environment –&gt; traits –&gt; K) + (alpha ← traits) species interactions (Lotka-Volterra)</li>
+<li>= N (= alpha^-1 x K)</li>
+<li>When competition absent, Banquo model reduces to Traitspace</li>
+<li>Traits used to predict K and alpha would be different (abiotic vs biotic relevance)</li>
+<li>But how to quantify effect of traits on competition (species interactions)? <em>(was this answered in the talk?)</em></li>
+<li>Tested with data from wetland in New Zealand; Banquo outperformed Traitspace and was closer to observed, though still not perfect</li>
+</ul></li>
+</ul></li>
+<li>Application of the models
+<ul>
+<li>For restoration, we generally compare to historical baseline, but historical conditions may not be completely relevant today</li>
+<li>Various factors such as climate warming may have changed species mortality rates and recruitment rates (which depend on traits and environment)</li>
+<li>Information on desired conditions (historical data + future projections) –&gt; trait-based objectives –&gt; <em>via new models</em> –&gt; species assemblages that meet objectives</li>
+<li>Application deals with species, not traits; we need quantitative model to translate trait values into species assemblages</li>
+<li>Laughlin’s current model(s) (Laughlin et al.&nbsp;2017) for this application aspect still do not incorporate species interactions, so are only Traitspace approaches
+<ul>
+<li>Individual trait values can be manipulated to achieve the overall optimal trait value (desired outcome)</li>
+</ul></li>
+<li>Don’t limit species pool to historical species list, many times no-analog assemblages are better placed; consider how species might move in future</li>
+</ul></li>
+<li>Laughlin suggests very careful trait selection (strong ecophysiological relevance) to be able to advance theory of trait-based ecology (link them to demographic rates), contra using large number of traits and data mining/machine learning</li>
+<li>Have incorporated negative species interactions (competition), but not yet figured out how to incorporate positive (mutualistic)</li>
+<li>Have not incorporated other trophic levels (animals, pathogens), only for simplicity</li>
+</ul>
+</section>
+</section>
+<section id="w03-2025-01-30" class="level1">
+<h1>W03 (2025-01-30)</h1>
+<section id="ch.-1-a-general-framework-for-community-ecology" class="level2">
+<h2 class="anchored" data-anchor-id="ch.-1-a-general-framework-for-community-ecology">Ch. 1: A General Framework for Community Ecology</h2>
+<ul>
+<li>Community vector can at times represent a small and narrowly defined location, and a larger area at other times</li>
+<li>Two central challenges of community ecology: assembly &amp; response rules (both involve prediction)</li>
+<li>How to define a single community based on size and features? –&gt; Authors suggest to leave this unanswered in the general context, but to rather use practicality when determining the answer on a case-by-case basis.</li>
+<li>We can describe a region/landscape using its communities if POV of community vector C, or using its habitat if POV of causal factors of community vector C</li>
+<li>Response rules might seem more complicated than assembly rules at first, but we also have additional information (the prior state of C from P)</li>
+<li>Filters force convergence of traits; competition acts the other way and disperses it to an extent.</li>
+<li>Central issues in community ecology do not really deal with time scales larger/older than 10<sup>6</sup> ya (that include continental drift, speciation, etc.)</li>
+<li>Emigration not included in their version of assembly rules, while immigration is.</li>
+</ul>
+<section id="summaryprovocative-questions" class="level3">
+<h3 class="anchored" data-anchor-id="summaryprovocative-questions">Summary/provocative questions</h3>
+<ul>
+<li>If we are to leave “community” undefined in the general context, what does that imply for this science (studying something abstract)?</li>
+</ul>
+<p>From discussion:</p>
+<ul>
+<li>Why did they not define “pattern” along with definitions of other terms?</li>
+<li>Kyle: found inconsistencies in their usage of “community” (sometimes approximate vector C, but other times seem to want it to be more restrictive)</li>
+</ul>
+</section>
+<section id="confusingunclear" class="level3">
+<h3 class="anchored" data-anchor-id="confusingunclear">Confusing/unclear</h3>
+<ul>
+<li>Re. competition forcing convergence/divergence of traits: in the example of plant height being selected for due to competition for light, in this case wouldn’t the community also have understorey plants adapted for low-light conditions, which would then be again divergence of traits? And here access to light would be an abiotic filter that “forces convergence” of plant height to tallness.</li>
+</ul>
+<p>From discussion:</p>
+<ul>
+<li>Framework depends on descriptive information/patterns</li>
+<li><del>Trophic levels: how do you practically account for</del></li>
+</ul>
+</section>
+<section id="missingdisagreecritique" class="level3">
+<h3 class="anchored" data-anchor-id="missingdisagreecritique">Missing/disagree/critique</h3>
+<ul>
+<li>Do not address how “population” would fit into their framework of landscapes of varying scales, in relation to “community”.
+<ul>
+<li>Kyle: both P and C would have their own populations, p of P would be larger than p of C</li>
+</ul></li>
+</ul>
+<p>From discussion:</p>
+<ul>
+<li>Fig. 1.4 depicts the opposite? Or caption is wrong.</li>
+<li>Recent critique about notion that environmental filters come first at the larger scale before competitive filters—not addressed</li>
+<li>Pushback against Observational/descriptional; important to get distracted by things like anthropogenic changes</li>
+</ul>
+</section>
+</section>
+</section>
+<section id="w04-2025-02-06" class="level1">
+<h1>W04 (2025-02-06)</h1>
+<section id="ch.-2-filters" class="level2">
+<h2 class="anchored" data-anchor-id="ch.-2-filters">Ch. 2: Filters</h2>
+<ul>
+<li>In their terms, causal factor refers to only P –&gt; C, and “driver” refers to only changes in C</li>
+<li>Want to rank filters based on “power”/relevance: 1 - S/Q (Proposition 1)</li>
+<li>We need good criteria for determining P</li>
+<li>Habitats with lower effects of abiotic filters may experience higher effects of biotic filters (competition, predation)</li>
+<li>Both herbivores and fires remove biomass, but herbivores are generally more selective</li>
+<li>Fire is also linked to drought</li>
+<li>Authors suggest that in most communities/habitats, the number of important/powerful filters is actually relatively low (Proposition 2), and many species are controlled by the same filter(s) (Proposition 3).</li>
+</ul>
+<section id="summaryprovocative-questions-1" class="level3">
+<h3 class="anchored" data-anchor-id="summaryprovocative-questions-1">Summary/provocative questions</h3>
+<ul>
+<li>When they talk about most ecological systems nowadays being deficient in large predators, why are humans not being factored in at all? Aren’t they the large predator in most of those systems?</li>
+</ul>
+</section>
+<section id="confusingunclear-1" class="level3">
+<h3 class="anchored" data-anchor-id="confusingunclear-1">Confusing/unclear</h3>
+<ul>
+<li>With their emphasis on C and P, they could have stuck with those in Proposition 1 instead of introducing S and Q</li>
+</ul>
+</section>
+<section id="missingdisagreecritique-1" class="level3">
+<h3 class="anchored" data-anchor-id="missingdisagreecritique-1">Missing/disagree/critique</h3>
+<ul>
+<li>I felt that this chapter, unlike previous, was citing mostly only New World literature; e.g., lots of field experimentation done in Europe like old field succession</li>
+</ul>
+</section>
+<section id="intra-group-discussion" class="level3">
+<h3 class="anchored" data-anchor-id="intra-group-discussion">Intra-group discussion</h3>
+<ul>
+<li>Kyle: They seem to focus just on how P becomes C (identities), ignoring things like relative abundances, spatial patterning, etc.</li>
+<li>Z: inconsistent definitions of C</li>
+<li>Anita: they seem to be focusing on how C forms from P in primary succession, not later</li>
+<li>Kyle: “one option is to trust professional opinion” can be criticised</li>
+<li>Time—what is “few years”, and how many years is enough?</li>
+<li>Kyle: imposing the same power for filters is extremely difficult; comparing relative power of filters is empirically difficult</li>
+<li>Anita: need to provide recommendations on how to overcome time/money/logistical challenges</li>
+</ul>
+</section>
+<section id="larger-discussion" class="level3">
+<h3 class="anchored" data-anchor-id="larger-discussion">Larger discussion</h3>
+<ul>
+<li>How would you describe/visualise dispersal limitation as a filter, aside from abiotic and biotic?</li>
+<li>Group 1 thought one of the authors’ points was that it doesn’t make sense to quantify power of filters—opposite of what I took away?
+<ul>
+<li>Gaurav: risk of quantifying is making real something that is abstract; he doesn’t think authors are recommending these 0-1 numbers should apply everywhere and everyone should do it</li>
+</ul></li>
+<li>Richard: they haven’t addressed how filters act interactively (additively, or multiplicatively?)
+<ul>
+<li>How do attribute the equation (power of filter) to any one filter</li>
+</ul></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="w05-2025-02-13" class="level1">
+<h1>W05 (2025-02-13)</h1>
+<section id="ch.-3-species-pools" class="level2">
+<h2 class="anchored" data-anchor-id="ch.-3-species-pools">Ch. 3: Species pools</h2>
+<ul>
+<li>Many problems with defining species pools: scale, ecoregions, absent but nearby, absent but may be present in future, etc.; but much grunt work already done (field guides, regional checklists, etc.) which is a positive</li>
+<li>Extinction rate in a community is proportional to the number of species in a community, but also affected by many other biological aspects</li>
+<li>Interactions affected Q: facilitation (mutualisms), competition</li>
+<li>Even two landscapes that have strong filters acting upon them may have very different speciation rates (Mediterranean vs mangroves)</li>
+<li>Predictions of future compositions should include potential invaders</li>
+<li>Despite complexity, recommend to use some standard method of ascertaining pools so that there is consistency, then modify it slightly</li>
+</ul>
+<section id="summaryprovocative-questions-2" class="level3">
+<h3 class="anchored" data-anchor-id="summaryprovocative-questions-2">Summary/provocative questions</h3>
+<ul>
+<li>Richard: Most models o theories in ecology assume that regional species pools are stable while accounting for dynamism in local pools (e.g., island pools). How can ecological frameworks account for temporal variation/dynamism in regional species pools?</li>
+</ul>
+</section>
+<section id="confusingunclear-2" class="level3">
+<h3 class="anchored" data-anchor-id="confusingunclear-2">Confusing/unclear</h3>
+<ul>
+<li>Alpha diversity defined as “regional pool”—always thought of it as community</li>
+<li>Pool –&gt; list of species that could occupy <em>before filtering begins</em>: but they have already considered some select filters (geography)
+<ul>
+<li>Examples of mangroves of Nova Scotia: mentioning frost reducing pool to zero (that is including filters!)</li>
+</ul></li>
+<li>p84. What was the point of the Partel example? Quickly moved on to Keddy’s example. Then abruptly moved back to Partel—jarring!</li>
+<li>Luca: how can we go beyond the neutral scenario (like the dS/dt formula they bring up)</li>
+</ul>
+</section>
+<section id="missingdisagreecritique-2" class="level3">
+<h3 class="anchored" data-anchor-id="missingdisagreecritique-2">Missing/disagree/critique</h3>
+<ul>
+<li>p85, para 2, line 1: they equate regional species pool with what they call “habitat-specific pool” which is exactly the opposite of what they say earlier</li>
+<li>Same old: jump into something, nah maybe not (standard terminology for pools)</li>
+<li>Most examples plant-biased, with no analog provided for mobile systems (e.g., “quadrats”, mobility/dispersal, definition of unit/scale)</li>
+<li>When discussing invasive species, they don’t distinguish between true invaders and just non-native species. And are the latter a big problem?</li>
+<li>(From discussion:) Chapter might have benefited from organising differently</li>
+</ul>
+</section>
+</section>
+</section>
+<section id="w06-2025-02-20" class="level1">
+<h1>W06 (2025-02-20)</h1>
+<section id="ch.-4-traits" class="level2">
+<h2 class="anchored" data-anchor-id="ch.-4-traits">Ch. 4: Traits</h2>
+<ul>
+<li>Understanding of the natural world: mostly species-by-species approach</li>
+<li>This species-oriented approach is not enough</li>
+<li>Frank Rigler criticised this approach and instead offered a switch to empiricism in ecology (quantitative relationships between DV and IV)
+<ul>
+<li>Zeno’s tortoise</li>
+</ul></li>
+<li>Describing biological diversity requires two maps: one of evolutionary convergence (traits) and one of evolutionary past (phylogeny). In this case, phylogeny equivalent to divergence.</li>
+<li>Alexander von Humboldt prepared one of the earliest functional classifications</li>
+<li>Human tendency to conflate functional types/groups with traits—need to be considered as separate fields of inquiry</li>
+<li>Compilation vs screening for trait data/matrices:
+<ul>
+<li>Compilations have been growing recently, but many variations like methods used in measuring variables, the variables measured, etc.</li>
+<li>Screening is instead manipulating some environmental factor in <em>controlled and standard</em> manner and looking at responses in <em>entire large set of species</em> (thus, brings in environmental factors)
+<ul>
+<li>Grime et al.&nbsp;1981</li>
+</ul></li>
+<li>Instead of env. factors, it’s also possible to make set of species interact with a standardised neighbour set (herbivory, competition, disease)
+<ul>
+<li>Phytometer experiments (Clements 1933)/bioassay approach</li>
+</ul></li>
+<li>Comparative ecology</li>
+<li>Suggest always using local trait measurements for local studies; global compilations for global-scale questions</li>
+</ul></li>
+<li>Trait matrices have two dimensions: no. of species, no. of traits. Challenge is to find the right tradeoff between the two.</li>
+<li>“Intrinsic dimensionality” (Laughlin 2014) in organisms might help us narrow down search for “right” no. of traits to a small set of the most important ones (because many will be correlated, and some will not have as big an impact as others)</li>
+</ul>
+<section id="summaryprovocative-questions-3" class="level3">
+<h3 class="anchored" data-anchor-id="summaryprovocative-questions-3">Summary/provocative questions</h3>
+<ul>
+<li>I find the intrinsic dimensionality concept interesting. Have there been challenges to this idea? If we do reach a point where we are able to visualise how this dimensionality looks for multiple taxa, what sort of cross-taxa comparative inferences can we make?
+<ul>
+<li>Kyle:</li>
+</ul></li>
+</ul>
+</section>
+<section id="confusingunclear-3" class="level3">
+<h3 class="anchored" data-anchor-id="confusingunclear-3">Confusing/unclear</h3>
+<ul>
+<li>Brought up issue of conflating functional groups with functional traits, but I didn’t find any conclusion to this
+<ul>
+<li>Kyle: some cases (controlled studies in field) when focusing on groups is important, and some cases where opposite</li>
+</ul></li>
+<li>p36. Example of Himalayan birds: showed how traits are related to environmental factors, but what was the point being made?</li>
+</ul>
+</section>
+<section id="missingdisagreecritique-3" class="level3">
+<h3 class="anchored" data-anchor-id="missingdisagreecritique-3">Missing/disagree/critique</h3>
+<ul>
+<li>p.&nbsp;125: Example given for “… people who can name everything and yet otherwise know very little …” is maybe contrived and not appropriate: that is going into conservation, not about what they knew</li>
+<li>EltonTraits and AVONET not discussed in part about new large-scale trait datasets</li>
+</ul>
+</section>
+<section id="discussion" class="level3">
+<h3 class="anchored" data-anchor-id="discussion">Discussion</h3>
+<ul>
+<li>Z: p 139 not possible to easily measure based on resources they use</li>
+<li>Kyle: p.128 some biologists seem to get stuck early in career and focus on one organism for the rest of their lives—nothing wrong with that—they argue that this doesn’t contribute much to understanding ecol. comm., but this is not true, e.g, keystone species</li>
+<li>Richard: leaf economics, water conduction; a couple of examples to demonstrate below-ground traits could be important</li>
+<li>Ahmani: Comparative ecology, doing controlled experiments: they mention can be done in field, but how controlled would those be really?</li>
+</ul>
+<p>Luca: HOW do we shift from species-based to trait-based without going back to species (choosing traits)? Shouldn’t we account for plasticity, heritability in all the traits before choosing them?</p>
+<pre><code>- Gaurav: p 138. “Where is one less likely to find useful generalizations about traits and environment than when collecting data on  single species?” why is this necessarily true if species do not all respond differently? 
+    - Karthik: Their attack is on focusing on only one species always.
+- Kyle: Their view of community ecology is relatively narrow, and there are signs of that throughout the book so far.</code></pre>
+<p>Femi: struggling to relate to their notion that species identities matter less than traits, etc.</p>
+<p>Kyle: there’s also hard vs soft traits (physiological, hard to measure vs proxies for those, easier to measure). Seem to use less common terms (e.g., LMA vs SLA)</p>
+<p>Gaurav: in plant and microbial ecology, trend towards measuring traits automated (drones, etc.); then comparing these traits with harder traits—taking rich matrix of data and condensing to something humans can interpret. Thoughts? - Kyle: Matches with their narrow view: predictive models, etc. But that is not the same as causation, and these approaches may not entirely work in causation contexts. - Anita: seems like their view of ecology is that end goal to predict what species where.</p>
+</section>
+</section>
+</section>
+<section id="w07-2025-02-27" class="level1">
+<h1>W07 (2025-02-27)</h1>
+<section id="ch.-5-trait-environment-interactions" class="level2">
+<h2 class="anchored" data-anchor-id="ch.-5-trait-environment-interactions">Ch. 5: Trait-Environment Interactions</h2>
+<ul>
+<li>Proposition 4: power of filter across multiple habitats can be quantified by strength of relationship between environmental gradient and traits (standard statistical tool like R<sup>2</sup> )
+<ul>
+<li>Using a correlation metric for predictions—how appropriate is that?</li>
+</ul></li>
+<li>Prop. 1 was for a single habitat, while Prop. 4 is for across multiple habitats</li>
+<li>Fourth corner problem: quantifying relationships between traits and environment (fourth matrix in community ecology)
+<ul>
+<li>Static: abundance-based quantification</li>
+<li>Dynamic: fitness-based quantification</li>
+</ul></li>
+<li>Ease of computation and simplicity of regression has popularised CWM approach
+<ul>
+<li>Unreliable to understand adaptive value of trait (dominant species do not always exhibit traits conforming to mean)</li>
+<li>Snapshot does not need to reflect optimal trait values (disturbance, dispersal limitation, or other rapid change)</li>
+<li>Another statistical issue: lack of independence of CWM among plots having the same species
+<ul>
+<li>Account for species non-independence by using taxon-free approach in sampling traits</li>
+</ul></li>
+</ul></li>
+<li>Fourth corner approach: CWM but using permutations to see if patterns observed are robust (or just by chance)</li>
+<li>Multi-level models: traits are not response but predictor (along with env. conditions), and species abundances are now response, with species ID as random effects</li>
+<li>Using population growth instead of snapshot abundances is better in some cases (would be almost identical to multi-level models)</li>
+<li>But discerning those “some cases” is important; sometimes the simple solution is the better one.</li>
+</ul>
+<section id="provocative-questions" class="level3">
+<h3 class="anchored" data-anchor-id="provocative-questions">Provocative questions</h3>
+<ul>
+<li>p.&nbsp;167 last para: Only way traits can impact community assembly is if traits are selected for along gradient. Do priority effects satisfy this rule?
+<ul>
+<li>Gaurav: more general version of this is that there has been no consideration of species interaction</li>
+</ul></li>
+<li>p.&nbsp;183 last para: if a population is growing over several years within a community, consider the species to be well matched to that environment—shouldn’t stable state be considered the good match? (sort of Malthusian, but still)
+<ul>
+<li>If some species grows extremely rapidly and eventually leads to the collapse of the community, would that be fitness? (Though I struggle to think of examples.)</li>
+</ul></li>
+</ul>
+</section>
+<section id="confusingunclear-4" class="level3">
+<h3 class="anchored" data-anchor-id="confusingunclear-4">Confusing/unclear</h3>
+<ul>
+<li>Not really sure how taxon-free approach eliminates the issue of species non-independence in CWM across plots. Even if you don’t note down which species the trait you measure belongs to, the samples will still be affected by which species are abundant in the plot.
+<ul>
+<li>As a corollary, I think they haven’t explained the issue of species non-independence very well (how species “get in the way”). <em>They finally get to a better version at the end of the section, “trait values are often measured at the species level”.</em></li>
+<li>When they finally got to the point about including species identity as random effects, it felt very anticlimactic and a very roundabout way of explaining it.</li>
+</ul></li>
+<li>Re. multi-level models. p.&nbsp;177 “it shifts the task from analyzing trait-environment <em>relationships</em> to trait-environment <em>interactions</em> that affect species abundances” — but traits and environment/filters are still on opposite sides of the equation!
+<ul>
+<li>They mean using random effects for species ID, and interaction term as fixed effect, changing relationships to interactions</li>
+</ul></li>
+</ul>
+</section>
+<section id="missingdisagreecritique-4" class="level3">
+<h3 class="anchored" data-anchor-id="missingdisagreecritique-4">Missing/disagree/critique</h3>
+<ul>
+<li>Fig. 5.2 (p.&nbsp;177) graph of corolla curvature against bill curvature has an interesting trend line fit!</li>
+<li>Good that data has been made available, but not the best long-term archival strategy (GH)
+<ul>
+<li>And book mentions CSVs but there are no CSVs in the RData file</li>
+</ul></li>
+<li>p.&nbsp;187 last para: “it is an anthropogenic landscape that humans have manipulated and often <strong>degraded</strong> for over 30000 years”—at this point should it really be called degradation?</li>
+</ul>
+</section>
+</section>
+</section>
+<section id="w08-2025-03-06" class="level1">
+<h1>W08 (2025-03-06)</h1>
+<section id="ch.-6-functional-groups" class="level2">
+<h2 class="anchored" data-anchor-id="ch.-6-functional-groups">Ch. 6: Functional Groups</h2>
+<ul>
+<li>Nested method: first consider assembly of functional groups, then separately that of species</li>
+<li>Combinatorics in statistics: the possible distributions of abundance of balls into fixed number of buckets</li>
+<li>Think of “early successional” functional types more as adaptation to ongoing natural disturbances, than as filters that primarily shaped functional types</li>
+<li>In many cases (e.g., stream invertebrates), focus on taxa might be major underrepresentation of true biological diversity since identification only until morphospecies—so better to look at functional groups/traits</li>
+<li>Many studies of functional classification are too narrow in focus, and therefore already eliminate some meaningful ecological variation. Authors suggest focusing on larger-scale patterns.</li>
+<li>How many functional groups are found in a community?—needs answer at two different scales:
+<ul>
+<li>At ecological/community scale: How many functional types will fit into a community?</li>
+<li>Evolutionary: How many functional types will evolve in response to a set of filters?</li>
+</ul></li>
+<li>Authors claim that enormous effort has gone into developing phylogenetic classifications, and ask for similar efforts for functional group classification</li>
+</ul>
+<section id="provocative-questions-1" class="level3">
+<h3 class="anchored" data-anchor-id="provocative-questions-1">Provocative questions</h3>
+<ul>
+<li></li>
+</ul>
+</section>
+<section id="confusingunclear-5" class="level3">
+<h3 class="anchored" data-anchor-id="confusingunclear-5">Confusing/unclear</h3>
+<ul>
+<li>Such a short paragraph for “Functional types of mammals” and “… of fungi”. What was the point of these sections?
+<ul>
+<li>More generally, left feeling incomplete/wanting more</li>
+</ul></li>
+<li>Gaurav: their opinion seems to be a pragmatic approach: if we’re measuring something meaningful, then it should be worth doing. But this perhaps misses out on questions worth asking to delve deeper.
+<ul>
+<li>Functional groups may be useful, but what are dangers of ignoring some of the edge cases within groups?</li>
+</ul></li>
+<li>Gaurav: perspective of phylogenetics and functional being contradictory/opposite views seems outdated
+<ul>
+<li>Kyle: “paradox” just seems to be a word they’re using. He’s personally opposed to considering the two contradictory/opposite.</li>
+</ul></li>
+<li>Karthik: is arbitrariness fine?
+<ul>
+<li>Rohit: on broad scale, will start arbitrary but at finer scales, there will be many decisions that can be taken on objective knowledge</li>
+</ul></li>
+</ul>
+</section>
+<section id="missingdisagreecritique-5" class="level3">
+<h3 class="anchored" data-anchor-id="missingdisagreecritique-5">Missing/disagree/critique</h3>
+<ul>
+<li>p.&nbsp;208 end: they claim that the Iberian example is at very fine scale, because it describes variation within a single functional group—but treecreepers and tits surely aren’t in the same guild! (How do you define guild?)</li>
+<li>Fitness landscapes introduced but let go of… As usual.</li>
+</ul>
+<p>Kyle: niches are defined by organism, not by environment; so there is no “empty niche”</p>
+</section>
+</section>
+</section>
+<section id="w09-2025-03-13" class="level1">
+<h1>W09 (2025-03-13)</h1>
+<section id="ch.-7-predictive-models-of-community-assembly" class="level2">
+<h2 class="anchored" data-anchor-id="ch.-7-predictive-models-of-community-assembly">Ch. 7: Predictive models of community assembly</h2>
+<ul>
+<li>Two main predictive modelling approaches: Community Assembly by Trait Selection (CATS; aka maxent; linear equations built with average trait values to predict species relative abundances), Traitspace (incorporates intraspecific trait variation, Bayesian prediction of species relative abundances)</li>
+<li>Claim that both models are generalisable to any ecosystem, but no. of traits should be &lt; no. of species</li>
+<li>CATS selects for solution that maximises evenness!</li>
+</ul>
+<section id="provocative-questions-2" class="level3">
+<h3 class="anchored" data-anchor-id="provocative-questions-2">Provocative questions</h3>
+<ul>
+<li>p.&nbsp;246: E –&gt; T –&gt; C. Is this always true, is T always in the middle? e.g., in the case of priority effects does this remain the same or do T and C switch places? Can we think of scenarios where evolutionary history (phylogeny) determines C before T?
+<ul>
+<li>Gaurav: it is an implicit assumption in the field of functional ecology, and it is also not always true. Doesn’t seem to be a way to reconcile hardcore functional perspectives with stochasticity.</li>
+</ul></li>
+<li>Rachana: is CWM the best? What about Community Weighted Medians?</li>
+<li>Z: is the applicability/relevance limited, if aim is just to get at relative abundances (considering we also need to measure species and traits anyway)?
+<ul>
+<li>Gaurav: What are qs in comm. eco. that this approach might not be useful for?</li>
+<li>Kyle: species interactions, trophic networks, spatial patterning</li>
+</ul></li>
+<li>Z:</li>
+</ul>
+</section>
+<section id="confusingunclear-6" class="level3">
+<h3 class="anchored" data-anchor-id="confusingunclear-6">Confusing/unclear</h3>
+<ul>
+<li>p.&nbsp;233: “Well, if we need to measure more things (traits) than we are predicting (species), our situation has probably not improved. Also, including more traits than species almost guarantees that there is no feasible mathematical solution, and therefore no prediction at all.”
+<ul>
+<li>But doesn’t this necessarily imply that species-poor ecosystems should have few traits involved? This is not a conclusion they have arrived at in any of the preceding chapters, and not sure how much sense this makes? In two-species associations (e.g., banj oak-chir pine), how can there only be one trait predicting the composition?</li>
+</ul></li>
+<li>Why does CATS select for evenness? Is that desirable? (How is it the most statistically probable solution?)</li>
+<li>p.&nbsp;241–242: I didn’t fully understand the bit about circularity when using environmental variables for CWM (or vice-versa). Isn’t the CWM usually what should feed into Tk in the equation?</li>
+</ul>
+</section>
+<section id="missingdisagreecritique-6" class="level3">
+<h3 class="anchored" data-anchor-id="missingdisagreecritique-6">Missing/disagree/critique</h3>
+<ul>
+<li>First time mentioning “releves” but do not define it</li>
+<li>p.&nbsp;244: they conclude that ~8 traits is the golden number to aim for—but this is highly context-, taxon-, system-specific. What they seem to be glossing over in their argument for simplicity is this context-dependence which requires concerted ascertaining of this golden number, rather than following a universal rule.</li>
+<li>p.&nbsp;255 fig 7.5: looks like a poor match of observed vs predicted to me! And panel (j), with its unequal axis lengths hides the poor performance on y axis!
+<ul>
+<li>It would also have been nice to compare variation rather than just optima</li>
+</ul></li>
+<li>“Natural history is not science”!
+<ul>
+<li>Sometimes it’s good to not have a fixed end point, because it allows you to make new connections between ideas!</li>
+</ul></li>
+<li>Anita: you need a lot of a priori knowledge in order to properly choose traits</li>
+</ul>
+</section>
+<section id="other" class="level3">
+<h3 class="anchored" data-anchor-id="other">Other</h3>
+<ul>
+<li>Gaurav: struck by how plant-centric this book is; does it have to do with the history of the development of this field?
+<ul>
+<li>Rachana: maybe it has to do with the focus on environment and not biotic interactions</li>
+<li>Kyle: work on other taxa even historically has been about traits, but maybe not explicitly for the specific narrow application that’s discussed in the book</li>
+</ul></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="w10-2025-03-20" class="level1">
+<h1>W10 (2025-03-20)</h1>
+<section id="ch.-8-prospects-and-possibilities" class="level2">
+<h2 class="anchored" data-anchor-id="ch.-8-prospects-and-possibilities">Ch. 8: Prospects and possibilities</h2>
+<ul>
+<li>Propositions 5 &amp; 6, which define functionally assembled and fully assembled communities, in terms of numbers functional groups adapted to the habitat and species within them
+<ul>
+<li>But then, how do we know the full list of functional groups adapted to the habitat? Even if we say filters determine this, how do we know whether our F vector is exhaustive?</li>
+</ul></li>
+<li>When discussing coexistence, there is a general failure to distinguish between coexistence of different functional types (ergo distinct species) and that of similar species</li>
+<li>Authors think that intraspecific limiting similarity is not very important in communities; usually involve stronger effect of dominance and disturbance</li>
+<li>Again, the term “alvar” introduced with no explanation, like “relevees” earlier.</li>
+<li>Comparison on max-ent vs min-ent: distribution of rel. ab. across species, pattern matched better in min-ent, but species identities were not necessarily correct because distribution does not contain info of species identity (just the rank order).</li>
+<li>Maybe consider that community assembly in fact has two distinct elements: assembly of species that will dominate the community, assembly of species that will remain rare</li>
+<li>They quickly move from points I agree with to those I disagree with though:
+<ul>
+<li>Strong dichotomy drawn between science and natural history, whereas I don’t think considering it a dichotomy is right in the first place (they aren’t categorically opposite)</li>
+</ul></li>
+</ul>
+<section id="provocative-questions-3" class="level3">
+<h3 class="anchored" data-anchor-id="provocative-questions-3">Provocative questions</h3>
+<ul>
+<li>Curious to know Anita’s thoughts on the section on assembly, redundancy and coexistence, where the authors use competitive frameworks and suggest disturbance-mediated coexistence like in the case of arid grasslands (which is also the system Anita works with).</li>
+<li>Is there even value in trying to gauge inherent rank in subfields of science, and therefore look up/down upon certain ones? Or are the systems we have in place enough (albeit very imperfect) to ensure tax money is used in best manner (e.g., grant applications)?
+<ul>
+<li>Especially they place unjustified value on conservation of rare species</li>
+</ul></li>
+</ul>
+<p>Xiyan: fully assembled communities: do we ever see them in reality, is it worth asking this question at all?</p>
+<p>Gaurav: seems they haven’t followed their own logical steps (species identity doesn’t matter)</p>
+</section>
+<section id="confusingunclear-7" class="level3">
+<h3 class="anchored" data-anchor-id="confusingunclear-7">Confusing/unclear</h3>
+<p>Z:</p>
+<ul>
+<li>Their goal wrt the tail-trimming section is not very clear.</li>
+<li>Ignore Fmax</li>
+<li>Ecological degradation vs just community change: how do you define it?
+<ul>
+<li>Richard: pollution is one clear example</li>
+<li>Rachana: everything is ecological change, and question of philosophy (value judgement on state 0 as better)</li>
+</ul></li>
+</ul>
+</section>
+<section id="missingdisagreecritique-7" class="level3">
+<h3 class="anchored" data-anchor-id="missingdisagreecritique-7">Missing/disagree/critique</h3>
+<ul>
+<li>Fig. 8.1 p.&nbsp;269: “functionally assembled” when S = 1 for each functional type, but shouldn’t it be 1 &lt; S &lt; Smax?</li>
+<li>p.&nbsp;270: more filters operating, fewer no. of spec. occupying habitat, i.e., filters are additive if not multiplicative. But this is not true?! Some of their own examples, like with drought and flooding, contained a single very strong filter acting on a community of few species! Wouldn’t more filters also lead to greater niche diversity/packing?</li>
+<li>Fig. 8.2 p.&nbsp;280: prediction with functional groups is still poor! And there is also clearly something else going on, that the linear fit doesn’t explain.</li>
+<li>They make the point of natural history not being worth taxpayer money in terms of benefit to larger public, but seem to place conservation (and conservation rarity) on a pedestal: but why should conserving a rare species like Plymouth Gentian be desirable or “worth” the public’s resources?</li>
+<li>Also, using rare for conservation and not for sample, is the opposite of what I think makes sense, especially since conservation assessments have well-defined terms already and something like “threatened” is much better suited.</li>
+<li>I find increasingly distasteful(?) how they view anthropogenic changes as being separate and “against” that of natural changes</li>
+<li>Fig. 8.8 p.&nbsp;312: how do you define “original state”?</li>
+</ul>
+<p>Rachana: They don’t mention how to foresee changes in filters when predicting for restoration</p>
+</section>
+</section>
+</section>
+<section id="w11-2025-03-27" class="level1">
+<h1>W11 (2025-03-27)</h1>
+<section id="book-summary" class="level2">
+<h2 class="anchored" data-anchor-id="book-summary">Book summary</h2>
+<p>What have you taken away from this book that you feel can make a difference to the way you think of your research, the field of community ecology, or the scientific process more generally?</p>
+<ul>
+<li>I think one main point which they raise, rather polarisingly, is to focus on traits in addition to species identity and phylogeny; and similarly, to strive for answers about process/mechanism rather than just looking for patterns.</li>
+<li>The concept of intrinsic dimensionality I found I agreed with—which means most questions require context-specific approaches and thinking (which they failed to mention).</li>
+</ul>
+<p>What were you hoping to learn from this book that you feel you did learn? What were you hoping to learn but was missing?</p>
+<ul>
+<li>I didn’t have many specific expectations going in. But since there was so much emphasis on predictive ecology, I was a bit underwhelmed when their models (especially Traitspace) were shown to perform rather poorly.</li>
+<li>Femi: really missed the evolutionary/historical perspective</li>
+<li>Richard: role of microbes missing</li>
+<li>Anita: wish they’d expanded on how the filter view is problematic, at least in the Filters chapter</li>
+</ul>
+<p>What do we stand to gain if the field of community ecology shifted towards conducting research in the spirit of Keddy and Laughlin? What would we lose?</p>
+<ul>
+<li>If we were to take parts of Keddy &amp; Laughlin’s advice, I think the field would become more holistic and have more immediate impact especially for application. For instance, a stronger emphasis on prediction will likely lead to the development of much better modelling approaches in shorter time.</li>
+<li>However, if we were to take their full advice verbatim, we would unfortunately narrow down the field again (e.g., omission of competition, dispersal, other interactions; science vs natural history).</li>
+</ul>
+<p>If you were to put forth a different set of “priorities” for community ecology, how would you structure them? (If you are not a community ecology researcher, you can apply this to your domain)</p>
+<ul>
+<li>Not really sure. I don’t know if I necessarily disagree with the priorities they have chosen, mostly just disagree with how they’ve chosen to think about them.</li>
+<li>I think even if many definitions may be arbitrary and/or dynamic, it is important to ensure that terms are used uniformly across the field.</li>
+<li>Improving predictive power is definitely a good priority to work towards. I would extend that more generally and say improving the robustness of study design as well as analytical methods is important.</li>
+<li>Z: involve stochasticity</li>
+<li>Rachana: incorporate spatial scale. Maybe also applicable to disciplines like invasion ecology.</li>
+<li>Richard: dynamic species pools, incorporate extinctions, climate-driven drift</li>
+<li>Gaurav: thinking a lot about predictive ecology. Should we be emphasising prediction so much, or should we prioritise understanding first?
+<ul>
+<li>Kyle: all natural phenomena divided into patterns and processes; Kyle thinks K&amp;L is pattern-based approach, not process-forward like Vellend. Pattern-based often used for predictive purposes, not necessarily explanatory.</li>
+</ul></li>
+</ul>
+<p>If the goal of community ecology is to predict species vector with relative abundances, how would you articulate the value in this science—aside from the context of environmental change and conservation?</p>
+<ul>
+<li>To me, there is value in even just the understanding we gain about things like assembly. But do other community ecologists agree, or do they think there are other more important values?</li>
+<li>Anita: canonical three goals of science: understand, infer, predict</li>
+</ul>
+<p>Is the way they’ve presented the conceptual framework unique and useful for beginner students?</p>
+<ul>
+<li>Ahmani: Think so, especially the way they’ve provided many examples, analogies, multiple systems</li>
+<li>Anita: Think Vellend book is comparable in how they’ve presented the framework, also of course considering drift, etc. The examples in Keddy &amp; Laughlin and them providing data &amp; code is useful and commendable</li>
+<li>Z: do we agree that the logical flow is one strength of the book? - Gaurav: yes across chapters, no within chapters</li>
+<li>Gaurav: kinda surprised restoration ecologists were so receptive about their views</li>
+<li>Kyle: prefer Vellend as first read, but think Keddy &amp; Laughlin should also be part of reading</li>
+</ul>
+</section>
+</section>
+<section id="w13-2025-04-10" class="level1">
+<h1>W13 (2025-04-10)</h1>
+<p><strong>Martini et al 2020. Functional trait-based approaches as a common framework for aquatic ecologists</strong></p>
+<ul>
+<li>Interactive mental map with links to appropriate literature searches on Scholar—very cool!</li>
+</ul>
+<section id="what-kinds-of-exciting-ecological-insights-might-we-achieve-by-using-ftbas-for-aquatic-ecology" class="level2">
+<h2 class="anchored" data-anchor-id="what-kinds-of-exciting-ecological-insights-might-we-achieve-by-using-ftbas-for-aquatic-ecology">What kinds of exciting ecological insights might we achieve by using FTBAs for aquatic ecology?</h2>
+<p>Z: - Freshwater systems most threat; so can help decide which species need to be saved (based on function) - Delineating species distributions - Reintroduce traits by deextinction (e.g., direwolves)</p>
+<ul>
+<li>Gaurav: How strange it seems to need a paper about using FTBA for aquatic ecology specifically, as if in a silo. If we assume there is merit to aquatic ecology being siloed from terrestrial, then should freshwater vs marine also remain separate (against the point of the paper)?
+<ul>
+<li>Kyle: Inherent differences and logistics, methodology, etc. (practice) lead to specialisation/silos. But ecological principles are the same across taxa, systems, time and space.</li>
+</ul></li>
+<li>Biological compartments: what is that? and is it useful to have this specific term?</li>
+</ul>
+</section>
+<section id="what-might-we-lose-by-focusing-aquatic-ecology-on-trait-based-frameworks" class="level2">
+<h2 class="anchored" data-anchor-id="what-might-we-lose-by-focusing-aquatic-ecology-on-trait-based-frameworks">What might we lose by focusing aquatic ecology on trait-based frameworks?</h2>
+<ul>
+<li>As they summarise in Conclusion, population dynamics, and anything else that requires taxon identity (and natural history)</li>
+</ul>
+<p>Pritha:</p>
+<ul>
+<li>Intraspecific variability, so TBF might exclude some taxa</li>
+</ul>
+<p>Rounak:</p>
+<ul>
+<li>Will same functional traits be applicable across realms (e.g., oceanic vs freshwater)</li>
+<li>Species interactions may not be accounted for by traits</li>
+</ul>
+<p>Kyle:</p>
+<ul>
+<li>What works best depends on question. Taxon might not be relevant; if interested in ecosystem function, maybe focusing only on traits is better for this question. But much of comm. ecol. interested in populations of organisms; in communities, conspecifics tend to be more influential than heterospecifics, so population-level focus matters. So, middle-ground is where most of us lie. Questions can be asked anywhere on this continuum.</li>
+<li>Nothing particularly odd about aquatic systems; above idea remains applicable across sytems.</li>
+</ul>
+</section>
+<section id="what-practical-challenges-can-you-imagine-for-integration-across-aquatic-systems" class="level2">
+<h2 class="anchored" data-anchor-id="what-practical-challenges-can-you-imagine-for-integration-across-aquatic-systems">What practical challenges can you imagine for integration across aquatic systems?</h2>
+<ul>
+<li>Authors have listed huge number of databases! Unification desirable, feasible?</li>
+</ul>
+<p>Luca:</p>
+<ul>
+<li>Associating genomic patterns with functional traits is very hard</li>
+<li>Using genomic approach (species identity-based) kind of at stalemate wrt species-based vs trait-based</li>
+</ul>
+<p>Ahmani:</p>
+<ul>
+<li>Certain taxa difficult to measure morphological traits (e.g., size)</li>
+</ul>
+<p>Rachana:</p>
+<ul>
+<li>Different traits would have evolved at different points for different contexts, so do we/how do we integrate all these differences when answering the same question?</li>
+</ul>
+<p>Femi:</p>
+<ul>
+<li>How to account for trait standardisation across different systems?</li>
+</ul>
+</section>
+</section>
+<section id="w14-2025-04-17" class="level1">
+<h1>W14 (2025-04-17)</h1>
+<p><strong>Louca et al.&nbsp;2018. Function and functional redundancy in microbial systems.</strong></p>
+<ul>
+<li>High taxonomic diversity, but low functional diversity; large turnover in taxa performing same functions
+<ul>
+<li>Tax. and func. composition are decoupled</li>
+<li>Reflects weak association between prokaryotic functions and phylogeny</li>
+</ul></li>
+<li>Things like horizontal gene transfer could be the cause</li>
+<li>Low immigration rates are not a limiting factor in open microbial systems</li>
+<li>Functional redundancy seems to be a common aspect of many microbial systems</li>
+<li>In this context of microbial systems, functions are seemingly limited to biochemical roles</li>
+</ul>
+<section id="how-might-our-understanding-of-microbial-diversity-change-if-we-prioritize-function-over-taxonomy" class="level2">
+<h2 class="anchored" data-anchor-id="how-might-our-understanding-of-microbial-diversity-change-if-we-prioritize-function-over-taxonomy">How might our understanding of microbial diversity change if we prioritize function over taxonomy?</h2>
+<p>(in perspective, methods, or ecological theory)</p>
+<ul>
+<li>Don’t we already do, given the challenges of focusing on the huge tax. diversity and identifying meaningful taxonomic units?</li>
+</ul>
+<p>Richard:</p>
+<ul>
+<li>recent methods like genomics and transcriptomics shows that most microbial ecologists are focusing on function and not so much on individual species</li>
+<li>depends on question and who is asking; e.g., taxonomists vs ecologists</li>
+</ul>
+<p>Kyle:</p>
+<ul>
+<li>Irrespective of organism, might always be that switching from tax. to func. perspective reduces number of units. May also be that evenness increases from the same switch.</li>
+<li>At low levels of redundancy, same level of predictability between tax. and func. perspectives.</li>
+</ul>
+</section>
+<section id="how-might-functional-redundancy-influence-the-way-we-study-or-manage-ecosystems" class="level2">
+<h2 class="anchored" data-anchor-id="how-might-functional-redundancy-influence-the-way-we-study-or-manage-ecosystems">How might functional redundancy influence the way we study or manage ecosystems?</h2>
+<ul>
+<li>Resources could be better or more efficiently spent by focusing on ecological function, rather than worrying about certain species declines</li>
+</ul>
+<p>Z:</p>
+<ul>
+<li>Invasive species management: looking at how are invasive plants affecting soil, rather than looking at individual species changes</li>
+<li>Gut flora: don’t need to focus on species, just function</li>
+<li>Gaurav: if need to reintroduce certain function, might be better to focus on function rather than reintroduce certain species</li>
+<li>Gaurav: are there lessons we can learn by manipulating microbial coomunity that can be applied to macro communities? Are we currently “resorting” to functional approach to microbes?</li>
+</ul>
+</section>
+<section id="how-do-we-balance-the-need-for-general-patterns-with-the-uniqueness-of-specific-organisms-or-systems" class="level2">
+<h2 class="anchored" data-anchor-id="how-do-we-balance-the-need-for-general-patterns-with-the-uniqueness-of-specific-organisms-or-systems">How do we balance the need for general patterns with the uniqueness of specific organisms or systems?</h2>
+<ul>
+<li>I don’t know!</li>
+</ul>
+<p>Rachana:</p>
+<ul>
+<li>In one context, focusing on function can be a form of focusing on general, whereas how individual systems achieve that function might be focusing on nuance</li>
+</ul>
+<p>Rohit:</p>
+<ul>
+<li>Perhaps focusing on nuances in microbial systems might be more difficult than for macrobial systems, because time scales are much smaller.</li>
+</ul>
+<p>…</p>
+<ul>
+<li>Can focus on uniqueness when high redunancy, because many ways of achieving function.</li>
+<li>Can also focus on it when there is an identified utilitarian value</li>
+</ul>
+</section>
+</section>
+<section id="w15-2025-04-24" class="level1">
+<h1>W15 (2025-04-24)</h1>
+<p><strong>Levine et al.&nbsp;2025. Why ecologists struggle to predict coexistence from functional traits.</strong></p>
+<ul>
+<li>Trait dispersion analyses assume that interspecific trait variability that’s larger than expected, if exist, are contributing to coexistence. But most studies have found neither over- nor under-dispersed trait patterns.</li>
+<li>Predicting coexistence from metrics proximate to coexistence itself probably work well, but functional traits not proximate.</li>
+<li>Fortunately, mechanistic models show that not only is best-case scenario from traits perspective unlikely to be true, but so also is the worst-case (metrics closest to coexistence being the only source).</li>
+<li>R*: minimum resource level at which species can maintain its population in a well-mixed system limited by a single resource</li>
+</ul>
+<section id="what-impact-could-dispersion-in-functional-traits-within-and-between-species-have-on-coexistence" class="level3">
+<h3 class="anchored" data-anchor-id="what-impact-could-dispersion-in-functional-traits-within-and-between-species-have-on-coexistence">What impact could dispersion in functional traits within and between species have on coexistence?</h3>
+<p>(Levine et al don’t talk much about trait dispersion/intraspecific variation in traits with regards to PIMs.)</p>
+<ul>
+<li>I thought they assumed that this variation would be accounted for by variation in PIMs?</li>
+</ul>
+<p>Andrew:</p>
+<ul>
+<li>Talk a lot about inter- but not much about intraspecific variation.</li>
+<li>Figures not very intuitive</li>
+</ul>
+</section>
+<section id="how-can-gaining-a-better-understanding-of-the-relationship-between-functional-traits-and-biotic-interactions-improve-predictions-of-community-responses-to-environmental-change" class="level3">
+<h3 class="anchored" data-anchor-id="how-can-gaining-a-better-understanding-of-the-relationship-between-functional-traits-and-biotic-interactions-improve-predictions-of-community-responses-to-environmental-change">How can gaining a better understanding of the relationship between functional traits and biotic interactions improve predictions of community responses to environmental change?</h3>
+<p>Z:</p>
+<ul>
+<li>Xiyuan: Might not be necessary to measure functional traits to understand coexistence</li>
+<li>Richard: better forecasting</li>
+</ul>
+</section>
+<section id="what-do-we-gainlose-from-integrating-the-use-of-pims-into-community-ecology-what-are-the-practical-implications-associated-with-the-use-of-pims" class="level3">
+<h3 class="anchored" data-anchor-id="what-do-we-gainlose-from-integrating-the-use-of-pims-into-community-ecology-what-are-the-practical-implications-associated-with-the-use-of-pims">What do we gain/lose from integrating the use of PIMs into community ecology? What are the practical implications associated with the use of PIMs?</h3>
+<ul>
+<li>I guess the PIMs themselves are not necessarily novel in function, just put a name to it now. But their critical function is determining the ways in which functional traits combine quantitatively to produce some system-level outcome—is this really all that different from what we were thinking of previously? This mathematical formulation seems the hardest part.
+<ul>
+<li>i.e., how do measurable functional traits (and other things like demographic rates) combine quantitatively to produce certain outcomes?</li>
+<li>Gaurav:
+<ul>
+<li>Trait ecology originated as physiological property of organism, but over the years the same ideas were co-opted when talking about demography.</li>
+<li>Their intended audience was people trying to link coexistence (which is a purely demographic property) with traits directly, while ignoring demography.</li>
+<li>So this was just a reminder to consider B without going directly from A to C</li>
+</ul></li>
+</ul></li>
+<li>Rohit: how easy would it be to get demographic data, more difficult than traits to obtain?</li>
+<li>Gaurav: very thoughtful piece, but not necessarily making it practically easier to do this work generally across all systems (their examples are pretty simple systems); especially in systems where physiological traits do not have such a central role.</li>
+<li>Rohit: maybe hard to generalise PIMs
+<ul>
+<li>Karthik: requires lots of theoretical work and validation to make sure links are comprehensive, before empirical work can start, because PIM framework breaks down otherwise</li>
+<li>Gaurav: what we’ll lose is if Step 1 Establish PIMs is integral, we might spend a looong time on that.</li>
+</ul></li>
+</ul>
+<p>Gaurav: Lot of literature (K&amp;L, some fo these papers) seem to work for functional groups, but not necessarily among species within groups</p>
+<ul>
+<li>Kyle: lots of other ways species interact than coexistence; scope of this paper is limited; functional traits not necessarily used to predict (only) coexistence</li>
+<li>Xiyuan: functional traits not necessary to get at coexistence
+<ul>
+<li>Kyle: if question is coexistence, it will always boil down to traits</li>
+</ul></li>
+</ul>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
