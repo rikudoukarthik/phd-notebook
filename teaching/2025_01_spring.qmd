@@ -96,3 +96,20 @@ C-I Teaching Toolkit available
     - Use pipette but immediately rinse with hot water
     - Put agarose flask back in incubator
 - Allow them to hold gel with hands and place in rack
+
+## Feedback
+
+The majority of feedback for us TAs was positive, and students particularly liked that we were approachable and open to questions in class and over email. 
+
+Below are some common points of constructive criticism from students (particularly my section 26):
+
+- Grading: unfair(?), lateness (but this was just 1--2 students)
+- Lecturing: backtracking & repeating what already explained (one student)
+
+And specifically for the course elements:
+
+- Need more detailed walkthrough of writing lab reports (maybe more examples of right vs wrong)
+- Good to guide through how they can relate Enzymes labs to lab reports and also their respective fields
+- Need more time between PLR grading and FLR submission
+- We should review polarity & chromatography in more detail
+    - Flash cards not helpful for this specifically
